@@ -24,6 +24,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_quit_from_tray" = "Telegram beenden";
 "lng_tray_icon_text" = "Telegram ist minimiert und läuft im Hintergrund,\ndu kannst das in den Einstellungen ändern.\nUm Telegram wieder anzuzeigen, klicke auf \ndas Symbol im Benachrichtigungsfeld.";
 
+// For lng_month_year or plain month name.
 "lng_month1" = "Januar";
 "lng_month2" = "Februar";
 "lng_month3" = "März";
@@ -36,6 +37,20 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_month10" = "Oktober";
 "lng_month11" = "November";
 "lng_month12" = "Dezember";
+
+// For lng_month_day and lng_month_day_year.
+"lng_month_day1" = "Januar";
+"lng_month_day2" = "Februar";
+"lng_month_day3" = "März";
+"lng_month_day4" = "April";
+"lng_month_day5" = "Mai";
+"lng_month_day6" = "Juni";
+"lng_month_day7" = "Juli";
+"lng_month_day8" = "August";
+"lng_month_day9" = "September";
+"lng_month_day10" = "Oktober";
+"lng_month_day11" = "November";
+"lng_month_day12" = "Dezember";
 
 "lng_month1_small" = "Jan";
 "lng_month2_small" = "Feb";
@@ -71,6 +86,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_month_year" = "{month} {year}";
 
 "lng_box_ok" = "OK";
+"lng_box_done" = "erledigt";
 
 "lng_cancel" = "Abbrechen";
 "lng_continue" = "Weiter";
@@ -114,6 +130,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_channel_status" = "Kanal";
 "lng_group_status" = "Gruppe";
+"lng_scam_badge" = "SCAM";
 
 "lng_channel_members_link#one" = "{count} Mitglied";
 "lng_channel_members_link#other" = "{count} Mitglieder";
@@ -125,6 +142,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_gif_error" = "Ein Fehler ist beim Laden der GIF-Animation aufgetreten :(";
 "lng_edit_error" = "Du kannst diese Nachricht nicht bearbeiten";
 "lng_join_channel_error" = "Du bist bereits in zu vielen Kanälen und Supergruppen. Bitte trenne dich zuvor von ein paar davon.";
+"lng_migrate_error" = "Diese Aktion konvertiert die Gruppe in eine Supergruppe. Leider sind Sie Mitglied in zu vielen Supergruppen und Kanälen. Bitte lassen Sie einige der Kanäle oder Gruppen, die Sie nicht benötigen, bevor Sie fortfahren.";
 "lng_error_phone_flood" = "Du hast dein Konto leider zu oft gelöscht. Bitte warte einige Tage, erst dann kannst du dich erneut registrieren.";
 "lng_error_start_minimized_passcoded" = "Du hast den lokalen Pincode-Schutz aktiviert, deshalb kannst du die App nicht minimiert starten. Die App muss dich vorher nach dem Pincode fragen.";
 "lng_error_pinned_max#one" = "Du kannst nicht mehr als {count} Chat oben anheften.";
@@ -136,6 +154,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_error_cant_add_admin_invite" = "Du kannst diesen Nutzer nicht als Admin festlegen, da er kein Mitglied dieser Gruppe ist oder du keine Erlaubnis hast, ihn einzuladen.";
 "lng_error_cant_add_admin_unban" = "Du kannst diesen Nutzer nicht als Admin festlegen, da er sich in der Sperrliste befindet und du ihn nicht entsperren darfst.";
 "lng_error_cant_ban_admin" = "Du kannst diesen Nutzer nicht sperren, da er ein Admin dieser Gruppe ist und du keine Berechtigung hast, ihn zurückzustufen.";
+"lng_error_admin_limit" = "Entschuldigung, Sie haben die maximale Anzahl an Administratoren für diese Gruppe erreicht.";
+"lng_error_admin_limit_channel" = "Entschuldigung, Sie haben die maximale Anzahl an Administratoren für diesen Kanal erreicht.";
+"lng_error_post_link_invalid" = "Leider können Sie nicht auf diese Nachricht zugreifen. Sie sind kein Mitglied des Chats, in dem es gepostet wurde.";
 "lng_sure_add_admin_invite" = "Dieser Nutzer ist kein Gruppenmitglied. Möchtest du ihn der Gruppe hinzufügen und als Admin festlegen?";
 "lng_sure_add_admin_unban" = "Dieser Nutzer ist derzeit in dieser Gruppe eingeschränkt oder gesperrt. Möchtest du ihn entsperren und befördern?";
 "lng_sure_ban_admin" = "Dieser Nutzer ist Admin in dieser Gruppe. Möchtest du fortfahren und ihn einschränken?";
@@ -150,11 +171,15 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_deleted" = "Gelöschtes Konto";
 "lng_deleted_message" = "Gelöschte Nachricht";
 "lng_pinned_message" = "Angeheftete Nachricht";
+"lng_pinned_poll" = "Angeheftete Umfrage";
 "lng_pinned_unpin_sure" = "Angeheftete Nachricht entfernen?";
 "lng_pinned_pin_sure" = "Möchtest du diese Nachricht anheften?";
 "lng_pinned_pin" = "Anheften";
 "lng_pinned_unpin" = "Entfernen";
 "lng_pinned_notify" = "Alle benachrichtigen";
+
+"lng_edit_media_album_error" = "Diese Datei kann nicht als Teil eines Albums gespeichert werden.";
+"lng_edit_media_invalid_file" = "Diese Datei kann leider nicht verwendet werden.";
 
 "lng_intro_about" = "Willkommen in der offiziellen Telegram Desktop App.\nDie App ist schnell und sicher.";
 "lng_start_msgs" = "JETZT STARTEN";
@@ -169,7 +194,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_phone_ph" = "Deine Telefonnummer";
 "lng_phone_title" = "Dein Telefon";
 "lng_phone_desc" = "Bitte Land und Telefonnummer\nohne führende Null eintragen.";
-"lng_phone_notreg" = "Wenn du noch kein Telegram Konto hast,\n[b]registriere[/b] dich über unsere {link_start}Android / iPhone Apps{link_end}\noder direkt {signup_start}hier{signup_end}";
+//"lng_phone_notreg" = "Wenn du noch kein Telegram Konto hast,\n[b]registriere[/b] dich über unsere {link_start}Android / iPhone Apps{link_end}\noder direkt {signup_start}hier{signup_end}";
 "lng_country_code" = "Ländercode";
 "lng_bad_country_code" = "Falscher Ländercode";
 "lng_country_ph" = "Suche";
@@ -179,7 +204,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_code_ph" = "Dein Code";
 "lng_code_desc" = "Wir haben dir einen Aktivierungscode gesendet.\nBitte Code hier eingeben.";
-"lng_code_telegram" = "Bitte den Code eingeben, den du in der\nzuvor benutzen [b]Telegram[/b]-App erhalten hast.";
+"lng_code_from_telegram" = "Please enter the code you've just received\nin your previous **Telegram** app.";
 "lng_code_no_telegram" = "Code per SMS senden";
 "lng_code_call" = "Telegram ruft dich an in {minutes}:{seconds}";
 "lng_code_calling" = "Telegram ruft dich an...";
@@ -219,6 +244,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_signin_reset_in_days" = "{days_count} {hours_count} {minutes_count}";
 "lng_signin_reset_in_hours" = "{hours_count} {minutes_count}";
 "lng_signin_reset_cancelled" = "Deine vorherigen Versuche das Konto zurückzusetzen wurden durch den aktiven Nutzer abgebrochen. Bitte in 7 Tagen erneut probieren.";
+"lng_signin_banned_text" = "Diese Telefonnummer ist gesperrt.";
+"lng_signin_banned_help" = "Hilfe";
 
 "lng_signup_title" = "Deine Info";
 "lng_signup_desc" = "Bitte trage deinen Namen ein \nund lade ein Bild hoch.";
@@ -269,16 +296,23 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_empty_bio" = "Keine";
 
 "lng_settings_section_notify" = "Benachrichtigungen";
+"lng_settings_notify_title" = "Benachrichtigungen für Chats";
 "lng_settings_desktop_notify" = "Desktopbenachrichtigungen";
 "lng_settings_show_name" = "Absendername anzeigen";
 "lng_settings_show_preview" = "Nachrichtenvorschau anzeigen";
+"lng_settings_native_title" = "Eigene Benachrichtigungen";
 "lng_settings_use_windows" = "Windows Benachrichtigungen";
-"lng_settings_use_native_notifications" = "Linux Benachrichtigungen";
+"lng_settings_use_native_notifications" = "Eingebettete Benachrichtigungen verwenden";
 "lng_settings_advanced_notifications" = "Position und Anzahl der Benachrichtigungen";
 "lng_settings_notifications_position" = "Position auf dem Bildschirm";
 "lng_settings_notifications_count" = "Anzahl der Benachrichtigungen";
 "lng_settings_sound_notify" = "Ton abspielen";
+"lng_settings_badge_title" = "Badge Zähler";
 "lng_settings_include_muted" = "Stummgeschaltete Chats mitzählen";
+"lng_settings_count_unread" = "ungelesene Nachrichtenzähler";
+"lng_settings_events_title" = "Ereignisse";
+"lng_settings_events_joined" = "Kontakt ist jetzt Mitglied der Telegramgruppe";
+"lng_settings_events_pinned" = "Angeheftete Nachrichten";
 
 "lng_notification_preview" = "Du hast eine neue Nachricht";
 "lng_notification_reply" = "Antworten";
@@ -290,6 +324,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_languages" = "Sprachen";
 "lng_sure_save_language" = "Telegram wird neugestartet, um in der neuen Sprache angezeigt werden zu können";
 "lng_settings_update_automatically" = "Automatisch aktualisieren";
+"lng_settings_install_beta" = "Installiere Beta version";
 "lng_settings_current_version_label" = "Version {version}:";
 "lng_settings_current_version" = "Version {version}";
 "lng_settings_check_now" = "Auf Updates prüfen";
@@ -309,6 +344,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_settings_section_chat_settings" = "Chat-Einstellungen";
 "lng_settings_replace_emojis" = "Emoji ersetzen";
+"lng_settings_suggest_emoji" = "Emoji-Ersatz Vorschlag";
+"lng_settings_suggest_by_emoji" = "Schlagen Sie beliebte Sticker von emoji vor";
 "lng_settings_view_emojis" = "Liste anzeigen";
 "lng_settings_emoji_list" = "Unterstützte Emoji";
 "lng_settings_send_enter" = "Mit Enter senden";
@@ -323,6 +360,64 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_bg_tile" = "Nebeneinander";
 "lng_settings_adaptive_wide" = "Flexibles Layout für breite Bildschirme";
 
+"lng_settings_section_call_settings" = "Calls Settings";
+"lng_settings_call_section_output" = "Speakers and headphones";
+"lng_settings_call_section_input" = "Microphone";
+"lng_settings_call_input_device" = "Input device";
+"lng_settings_call_output_device" = "Output device";
+"lng_settings_call_input_volume" = "Input volume: {percent}%";
+"lng_settings_call_output_volume" = "Output volume: {percent}%";
+"lng_settings_call_test_mic" = "Test microphone";
+"lng_settings_call_stop_mic_test" = "Stop test";
+"lng_settings_call_section_other" = "Other settings";
+"lng_settings_call_open_system_prefs" = "Open system sound preferences";
+"lng_settings_call_device_default" = "Default";
+"lng_settings_call_audio_ducking" = "Mute other sounds during calls";
+
+"lng_settings_language" = "Sprache";
+"lng_settings_default_scale" = "Standardmäßige Schnittstellenskala";
+"lng_settings_connection_type" = "Verbindungstyp";
+"lng_settings_downloading_update" = "Update wird heruntergeladen {progress} ...";
+"lng_settings_privacy_title" = "Privatsphäre";
+"lng_settings_last_seen" = "Zuletzt gesehen";
+"lng_settings_calls" = "Sprachanrufe";
+"lng_settings_calls_peer_to_peer_title" = "Peer-to-peer";
+"lng_settings_calls_peer_to_peer_button" = "Verwenden Sie Peer-to-Peer mit";
+"lng_settings_groups_invite" = "Gruppen";
+"lng_settings_group_privacy_about" = "Ändern Sie, wer Sie zu Gruppen und Kanälen hinzufügen kann.";
+"lng_settings_phone_number_privacy" = "Telefonnummer Privatsphäre";
+"lng_settings_forwards_privacy" = "Weitergeleitete Nachrichten";
+"lng_settings_profile_photo_privacy" = "Profil Foto
+"lng_settings_sessions_about" = "Kontrollieren Sie Ihre Sitzungen auf den anderen Geräten.";
+"lng_settings_passcode_disable" = "Passcode deaktivieren";
+"lng_settings_password_disable" = "Cloud-Passwort deaktivieren";
+"lng_settings_password_abort" = "Brechen Sie die Einrichtung der zweistufigen Überprüfung ab";
+"lng_settings_password_reenter_email" = "Wiederherstellungs-E-Mail erneut eingeben";
+"lng_settings_about_bio" = "Alle Details wie Alter, Beruf oder Stadt. \nExample: 23 Jahre. Designer aus San Francisco";
+"lng_settings_name_label" = "Name";
+"lng_settings_username_label" = "Benutzername";
+"lng_settings_phone_label" = "Telefonnummer";
+"lng_settings_username_add" = "Benutzernamen hinzufügen";
+"lng_settings_close_sure" = "Möchten Sie diese Seite wirklich schließen? Sie haben Ihre Änderungen nicht gespeichert.";
+"lng_settings_peer_to_peer" = "Peer-to-Peer";
+"lng_settings_peer_to_peer_about" = "Durch Deaktivieren von Peer-to-Peer werden alle Anrufe über Telegrammserver weitergeleitet, um die Offenlegung Ihrer IP-Adresse zu vermeiden. Die Audioqualität kann jedoch leicht beeinträchtigt werden.";
+"lng_settings_advanced" = "Fortgeschritten";
+"lng_settings_stickers_emoji" = "Stickers und emoji";
+"lng_settings_messages" = "Mitteilungen";
+"lng_settings_themes" = "Benutzeroberfläche";
+"lng_settings_data_storage" = "Daten und Speicherung";
+"lng_settings_information" = "Profil bearbeiten";
+"lng_settings_passcode_title" = "Lokaler passcode";
+"lng_settings_password_title" = "Zweistufige Verifizierung";
+"lng_settings_sessions_title" = "Aktive Sitzungen";
+"lng_settings_destroy_title" = "Mein Konto löschen";
+"lng_settings_network_proxy" = "Netzwerk und Proxy";
+"lng_settings_version_info" = "Version und Aktualisierungen";
+"lng_settings_system_integration" = "Systemintegration";
+"lng_settings_performance" = "Performance";
+"lng_settings_enable_animations" = "Animationen aktivieren";
+"lng_settings_autoplay_gifs" = "GIFs automatisch abspielen";
+
 "lng_backgrounds_header" = "Neuen Chat-Hintergrund wählen";
 "lng_theme_sure_keep" = "Wirklich dieses Thema verwenden?";
 "lng_theme_reverting#one" = "Vorheriges Thema wird in {count} Sekunde benutzt.";
@@ -330,6 +425,18 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_theme_keep_changes" = "Anwenden";
 "lng_theme_revert" = "Zurücksetzen";
 
+"lng_background_header" = "Hintergrund Vorschau";
+"lng_background_text1" = "Ah, ihr Kinder von heute mit Techno-Musik! Du solltest die Klassiker wie Hasselhoff genießen!";
+"lng_background_text2" = "Ich kann dich jetzt nicht mal ernst nehmen.";
+"lng_background_bad_link" = "Dieser Hintergrundlink scheint ungültig zu sein.";
+"lng_background_apply" = "Anwenden";
+"lng_background_share" = "Teilen";
+"lng_background_link_copied" = "Link in die Zwischenablage kopiert";
+"lng_background_blur" = "Verschwommen";
+"lng_background_sure_delete" = "Möchten Sie diesen Hintergrund wirklich löschen?";
+
+"lng_download_path_ask" = "Abfrage des Download-Pfades für jede Datei";
+"lng_download_path" = "Downloadverzeichnis";
 "lng_download_path_dont_ask" = "Speicherort merken";
 "lng_download_path_label" = "Speicherort:";
 "lng_download_path_temp" = "Temporär";
@@ -351,11 +458,28 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_section_privacy" = "Privatsphäre und Sicherheit";
 
 "lng_local_storage_title" = "Lokaler Cache";
-"lng_settings_no_data_cached" = "Keine temporären Daten!";
-"lng_settings_images_cached#one" = "{count} Bild, {size}";
-"lng_settings_images_cached#other" = "{count} Bilder, {size}";
-"lng_settings_audios_cached#one" = "{count} Sprachnachricht, {size}";
-"lng_settings_audios_cached#other" = "{count} Sprachnachrichten, {size}";
+"lng_local_storage_empty" = "Keine Cache-Dateien vorhanden";
+"lng_local_storage_image#one" = "{count} Bild";
+"lng_local_storage_image#other" = "{count} Bilder";
+"lng_local_storage_sticker#one" = "{count} Sticker";
+"lng_local_storage_sticker#other" = "{count} Stickers";
+"lng_local_storage_voice#one" = "{count} Sprachnachricht";
+"lng_local_storage_voice#other" = "{count} Sprachnachrichten";
+"lng_local_storage_round#one" = "{count} Videonachricht";
+"lng_local_storage_round#other" = "{count} Videonachrichten";
+"lng_local_storage_animation#one" = "{count} Animation";
+"lng_local_storage_animation#other" = "{count} Animationen";
+"lng_local_storage_media" = "Media cache";
+"lng_local_storage_size_limit" = "Begrenzung der Gesamtgröße:{size}";
+"lng_local_storage_media_limit" = "Medien-Cache-Limit: {size}";
+"lng_local_storage_time_limit" = "Dateien löschen, die älter sind als:{limit}";
+"lng_local_storage_limit_weeks#one" = "{count} Woche
+"lng_local_storage_limit_weeks#other" = "{count} Wochen
+"lng_local_storage_limit_months#one" = "{count} Monat
+"lng_local_storage_limit_months#other" = "{count} Monate
+"lng_local_storage_limit_never" = "Niemals";
+"lng_local_storage_summary" = "Zusammenfassung";
+"lng_local_storage_clear_some" = "einiges Löschen";
 "lng_local_storage_clear" = "Leeren";
 "lng_local_storage_clearing" = "Leeren...";
 "lng_local_storage_cleared" = "Alles entfernt!";
@@ -364,6 +488,11 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_section_advanced_settings" = "Erweiterte Einstellungen";
 "lng_settings_enable_night_theme" = "Nachtmodus aktivieren";
 "lng_settings_disable_night_theme" = "Nachtmodus deaktivieren";
+"lng_settings_no_data_cached" = "Keine temporären Daten!";
+"lng_settings_images_cached#one" = "{count} Bild, {size}";
+"lng_settings_images_cached#other" = "{count} Bilder, {size}";
+"lng_settings_audios_cached#one" = "{count} Sprachnachricht, {size}";
+"lng_settings_audios_cached#other" = "{count} Sprachnachrichten, {size}";
 
 "lng_passcode_remove_button" = "Entfernen";
 
@@ -394,6 +523,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_passcode_need_unblock" = "Bitte erst entsperren.";
 
 "lng_cloud_password_waiting" = "Bestätigungslink gesendet an {email}...";
+"lng_cloud_password_waiting_code" = "Bestätigungslink gesendet an {email}...";
+"lng_cloud_password_confirm" = "Confirm recovery email";
 "lng_cloud_password_change" = "Kennwort ändern";
 "lng_cloud_password_create" = "Kennwort erstellen";
 "lng_cloud_password_remove" = "Kennwort entfernen";
@@ -418,6 +549,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_cloud_password_differ" = "Kennwörter stimmen nicht überein";
 "lng_cloud_password_wrong" = "Falsches Kennwort";
 "lng_cloud_password_is_same" = "Kennwort wurde nicht geändert";
+"lng_cloud_password_passport_losing" = "Achtung! Alle in Ihrem Telegrammpass gespeicherten Daten gehen verloren!";
+"lng_cloud_password_resend" = "Code erneut senden";
+"lng_cloud_password_resent" = "Der Code wurde erneut gesendet.";
 
 "lng_connection_type" = "Verbindungsart:";
 "lng_connection_auto_connecting" = "Standard (verbinden...)";
@@ -433,7 +567,34 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_connection_port_ph" = "Port";
 "lng_connection_user_ph" = "Benutzer";
 "lng_connection_password_ph" = "Kennwort";
+"lng_connection_proxy_secret_ph" = "Geheimsache";
 "lng_connection_save" = "Speichern";
+
+"lng_proxy_settings" = "Proxyeinstellungen";
+"lng_proxy_disable" = "Proxy deaktivieren";
+"lng_proxy_use_system_settings" = "Verwende System-Proxy-Einstellungen";
+"lng_proxy_use_custom" = "Verwende benutzerdefinierten Proxy";
+"lng_proxy_use_for_calls" = "Proxy verwenden für Anrufe";
+"lng_proxy_about" = "Proxyserver können beim Zugriff auf Telegram hilfreich sein, wenn in einer bestimmten Region keine Verbindung besteht.";
+"lng_proxy_add" = "Proxy hinzufügen";
+"lng_proxy_share" = "Teilen";
+"lng_proxy_online" = "verbunden";
+"lng_proxy_checking" = "überprüfen";
+"lng_proxy_connecting" = "verbinden";
+"lng_proxy_available" = "verfügbar, {ping} ms ping";
+"lng_proxy_unavailable" = "Nicht verfügbar";
+"lng_proxy_edit" = "Proxy bearbeiten";
+"lng_proxy_menu_edit" = "Bearbeiten";
+"lng_proxy_menu_delete" = "Löschen";
+"lng_proxy_menu_restore" = "Wiederhergestellt";
+"lng_proxy_edit_share" = "Geteilt";
+"lng_proxy_address_label" = "Socket address";
+"lng_proxy_credentials_optional" = "Credentials (optional)";
+"lng_proxy_credentials" = "Credentials";
+"lng_proxy_description" = "Ihre gespeicherte Proxy-Liste wird hier sein.";
+"lng_proxy_sponsor" = "Proxy sponsor";
+"lng_proxy_sponsor_about" = "Dieser Kanal wird von Ihrem Proxyserver angezeigt. \nDieser Kanal kann nicht aus Ihrer Chat-Liste entfernt werden. \nDeaktivieren Sie den Proxy in den Telegrammeinstellungen.";
+"lng_proxy_sponsor_warning" = "Dieser Proxy kann einen gesponserten Kanal in deiner Chatliste anzeigen. Dies zeigt keinen Ihrer Telegrammverbindungen an.";
 
 "lng_settings_blocked_users" = "Blockierte Nutzer";
 "lng_settings_last_seen_privacy" = "Zuletzt gesehen";
@@ -441,6 +602,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_groups_invite_privacy" = "Gruppen";
 "lng_settings_show_sessions" = "Sitzungen";
 "lng_settings_self_destruct" = "Kontolöschung bei Inaktivität";
+"lng_settings_export_data" = "Export Telegram data";
+"lng_settings_destroy_if" = "Wenn weg für ...";
 "lng_settings_change_phone" = "Nummer ändern";
 
 "lng_settings_reset" = "Alle anderen Sitzungen abmelden";
@@ -466,35 +629,58 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_sessions_no_other" = "Keine anderen Sitzungen";
 "lng_sessions_other_desc" = "Du kannst Telegram gleichzeitig vom Handy, Tablet oder auch Computer mit der gleichen Handynummer benutzen. Alles wird immer synchronisiert.";
 "lng_sessions_terminate_all" = "Alle anderen Sitzungen abmelden";
+"lng_sessions_terminate_all_about" = "Meldet alle Geräte außer diesem ab.";
+"lng_sessions_incomplete" = "Unvollständige Anmeldeversuche";
+"lng_sessions_incomplete_about" = "Die oben genannten Geräte haben keinen Zugriff auf Ihre Nachrichten. Der Code wurde korrekt eingegeben, es wurde jedoch kein korrektes Passwort angegeben.";
 
 "lng_blocked_list_title" = "Blockierte Nutzer";
 "lng_blocked_list_unknown_phone" = "unbekannte Nummer";
 "lng_blocked_list_unblock" = "Freigeben";
+"lng_blocked_list_restart" = "Restart";
 "lng_blocked_list_add" = "Nutzer blockieren";
 "lng_blocked_list_add_title" = "Wen möchtest du blockieren?";
 "lng_blocked_list_already_blocked" = "bereits blockiert";
 "lng_blocked_list_about" = "Blockierte Nutzer können dir keine Nachrichten schicken oder dich in Gruppen einladen. Sie sehen weder dein Profilbild, noch deinen Online- und \"zuletzt gesehen\" Status.";
 "lng_blocked_list_not_found" = "Keine Nutzer gefunden.";
+"lng_blocked_list_confirm_title" = "Blockieren {name}";
+"lng_blocked_list_confirm_text" = "Möchtest du verhindern, dass {name} dich per Telegramm anruft?";
+"lng_blocked_list_confirm_clear" = "Diesen Chat löschen";
+"lng_blocked_list_confirm_ok" = "Blockieren";
 
 "lng_edit_privacy_everyone" = "Jeder";
 "lng_edit_privacy_contacts" = "Meine Kontakte";
 "lng_edit_privacy_nobody" = "Niemand";
 "lng_edit_privacy_exceptions" = "Ausnahmen hinzufügen";
 
+"lng_edit_privacy_exceptions_count#one" = "{count} user";
+"lng_edit_privacy_exceptions_count#other" = "{count} users";
+"lng_edit_privacy_exceptions_add" = "Benutzer oder Gruppen hinzu fügen";
+
+"lng_edit_privacy_phone_number_title" = "Telefonnummer Privatsphäre";
+"lng_edit_privacy_phone_number_header" = "Wer kann deine Telefonnummer sehen";
+"lng_edit_privacy_phone_number_warning" = "Benutzer, die Ihre Nummer bereits in den Kontakten gespeichert haben, werden sie auch im Telegramm sehen.";
+"lng_edit_privacy_phone_number_always_empty" = "Immer teilen mit";
+"lng_edit_privacy_phone_number_never_empty" = "Niemals teilen mit";
+"lng_edit_privacy_phone_number_exceptions" = "Diese Einstellungen überschreiben die obigen Werte.";
+"lng_edit_privacy_phone_number_always_title" = "Immer teilen mit";
+"lng_edit_privacy_phone_number_never_title" = "Niemals teilen mit";
+
 "lng_edit_privacy_lastseen_title" = "Zuletzt gesehen";
 "lng_edit_privacy_lastseen_description" = "Wer darf deine \"zuletzt gesehen\" Zeit sehen:";
+"lng_edit_privacy_lastseen_header" = "Wer kann deine letzte gesehene Zeit sehen?";
 "lng_edit_privacy_lastseen_warning" = "Wichtig: Du kannst den \"zuletzt gesehen\" Status nur von Personen sehen, mit denen du auch deinen teilst. Sonst wird nur die ungefähre Zeit angezeigt.";
 "lng_edit_privacy_lastseen_always_empty" = "Immer teilen mit";
 "lng_edit_privacy_lastseen_always#one" = "Immer teilen mit {count} Kontakt";
 "lng_edit_privacy_lastseen_always#other" = "Immer teilen mit {count} Kontakten";
 "lng_edit_privacy_lastseen_never_empty" = "Niemals teilen mit";
 "lng_edit_privacy_lastseen_never#one" = "Niemals teilen mit {count} Kontakt";
-"lng_edit_privacy_lastseen_never#other" = "Niemals teilen mit {count} Kontakten";
+"lng_edit_privacy_lastseen_never#other" = "Niemals teilen mit {count} Kontakten";
 "lng_edit_privacy_lastseen_exceptions" = "Hier kannst du Kontakte hinzufügen, für die eine Ausnahme gemacht werden soll.";
 "lng_edit_privacy_lastseen_always_title" = "Immer teilen mit";
 "lng_edit_privacy_lastseen_never_title" = "Niemals teilen mit";
 
 "lng_edit_privacy_groups_title" = "Wer kann mich Gruppen hinzufügen?";
+"lng_edit_privacy_groups_header" = "Who can invite you to groups and channels";
 "lng_edit_privacy_groups_description" = "Du kannst bestimmen, wer dich in Gruppen oder Kanälen hinzufügen kann:";
 "lng_edit_privacy_groups_always_empty" = "Immer erlauben";
 "lng_edit_privacy_groups_always#one" = "Immer {count} Kontakt erlauben";
@@ -507,6 +693,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_edit_privacy_groups_never_title" = "Niemals erlauben";
 
 "lng_edit_privacy_calls_title" = "Anrufe";
+"lng_edit_privacy_calls_header" = "Wer kann dich anrufen";
 "lng_edit_privacy_calls_description" = "Du kannst festlegen, wer dich anrufen darf:";
 "lng_edit_privacy_calls_always_empty" = "Immer erlauben";
 "lng_edit_privacy_calls_always#one" = "Immer {count} Kontakt erlauben";
@@ -518,6 +705,39 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_edit_privacy_calls_always_title" = "Immer erlauben";
 "lng_edit_privacy_calls_never_title" = "Niemals erlauben";
 
+"lng_edit_privacy_calls_p2p_title" = "Peer-to-Peer bei Anrufen";
+"lng_edit_privacy_calls_p2p_header" = "Mit wem ist Peer-to-Peer aktiviert?";
+"lng_edit_privacy_calls_p2p_always_empty" = "Immer erlaubt";
+"lng_edit_privacy_calls_p2p_never_empty" = "Niemals erlauben";
+"lng_edit_privacy_calls_p2p_exceptions" = "Peer-to-peer in Gesprächen wird mit diesen Benutzern unabhängig von den obigen Einstellungen verwendet oder nicht.";
+"lng_edit_privacy_calls_p2p_always_title" = "Immer erlaubt";
+"lng_edit_privacy_calls_p2p_never_title" = "Niemals erlauben";
+
+"lng_edit_privacy_calls_p2p_everyone" = "Jedermann";
+"lng_edit_privacy_calls_p2p_contacts" = "Meine Kontakte";
+"lng_edit_privacy_calls_p2p_nobody" = "Niemand";
+
+"lng_edit_privacy_forwards_title" = "Datenschutz für weitergeleitete Nachrichten";
+"lng_edit_privacy_forwards_header" = "Wer kann beim Weiterleiten meiner Nachrichten einen Link zu meinem Konto hinzufügen";
+"lng_edit_privacy_forwards_warning" = "Wenn sie an andere Chats weitergeleitet werden, werden Nachrichten, die Sie senden, nicht mit Ihrem Konto verknüpft.";
+"lng_edit_privacy_forwards_always_empty" = "Immer erlauben";
+"lng_edit_privacy_forwards_never_empty" = "Niemals erlauben";
+"lng_edit_privacy_forwards_exceptions" = "Diese Einstellungen überschreiben die obigen Werte.";
+"lng_edit_privacy_forwards_always_title" = "Immer erlaubt";
+"lng_edit_privacy_forwards_never_title" = "Niemals erlauben";
+"lng_edit_privacy_forwards_sample_message" = "Reinhardt, wir müssen dir ein paar neue Songs besorgen. 🎶";
+"lng_edit_privacy_forwards_sample_everyone" = "Verlinken Sie auf Ihr Konto.";
+"lng_edit_privacy_forwards_sample_contacts" = "Verknüpfen, wenn dies nach den folgenden Einstellungen zulässig ist.";
+"lng_edit_privacy_forwards_sample_nobody" = "Kein Link zu Ihrem Konto.";
+
+"lng_edit_privacy_profile_photo_title" = "Profil-Foto Datenschutz";
+"lng_edit_privacy_profile_photo_header" = "Wer kann mein Profilfoto sehen?";
+"lng_edit_privacy_profile_photo_always_empty" = "Immer erlaubt";
+"lng_edit_privacy_profile_photo_never_empty" = "Niemals erlaubt";
+"lng_edit_privacy_profile_photo_exceptions" = "Diese Einstellungen überschreiben die obigen Werte.";
+"lng_edit_privacy_profile_photo_always_title" = "Immer erlaubt";
+"lng_edit_privacy_profile_photo_never_title" = "Niemals erlaubt";
+
 "lng_self_destruct_title" = "Automatische Kontolöschung";
 "lng_self_destruct_description" = "Wenn du dich innerhalb dieser Zeit nicht anmeldest, wird dein Konto mit allen Nachrichten, Gruppen und Kontakten gelöscht.";
 "lng_self_destruct_months#one" = "{count} Monat";
@@ -526,7 +746,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_self_destruct_years#other" = "{count} Jahre";
 
 "lng_change_phone_title" = "Nummer ändern";
-"lng_change_phone_description" = "Du kannst deine Telefonnummer hier ändern.\nDein Konto und alle Daten in der Cloud, also \nNachrichten, Medien, Kontakte, etc. werden \nauf das neue Konto übertragen.\n\n[b]Wichtig[/b]: Alle deine Kontakte erhalten deine\n[b]neue Nummer[/b] ihrem Telefonbuch\nhinzugefügt, sofern sie deine alte Nummer \nhatten und du sie nicht blockiert hattest.";
+"lng_change_phone_about" = "Du kannst deine Telegrammnummer hier ändern. Ihr Konto und alle Ihre Cloud-Daten\n- Nachrichten, Medien, Kontakte, etc. werden auf die neue Nummer verschoben.\n\n**Wichtig**: Alle Ihre Telegramm-Kontakte werden \nIhre **neue Nummer** zu ihrem \nAdressbuch hinzugefügt bekommen, vorausgesetzt, sie hatten \nIhre alte Nummer und Sie haben sie nicht im Telegramm blockiert.";
 "lng_change_phone_warning" = "Bitte beachte, dass alle deine Kontakte deine neue Nummer ihrem Telefonbuch hinzugefügt bekommen, sofern sie deine alte Nummer gespeichert hatten und du sie nicht blockiert hattest.";
 "lng_change_phone_occupied" = "Unter der Nummer {phone} gibt es bereits ein Telegram-Konto. Du musst es vor der Änderung deiner Nummer löschen.";
 "lng_change_phone_button" = "Nummer ändern";
@@ -539,17 +759,18 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_mute_duration_hours#one" = "Für {count} Stunde";
 "lng_mute_duration_hours#other" = "Für {count} Stunden";
+"lng_mute_duration_days#one" = "Für {count} Tag";
+"lng_mute_duration_days#other" = "Für {count} Tagen";
+"lng_mute_duration_forever" = "Für immer";
 "lng_mute_box_tip" = "Wie lange sollen die Benachrichtigungen für diesen Chat ausgeschaltet werden?";
 
 "lng_preview_loading" = "Lade Linkvorschau...";
 
-"lng_profile_chat_unaccessible" = "Gruppe ist nicht verfügbar";
-"lng_profile_about_section" = "Info";
-"lng_profile_description_section" = "Beschreibung";
 "lng_profile_settings_section" = "Einstellungen";
 "lng_profile_actions_section" = "Aktionen";
 "lng_profile_bot_settings" = "Einstellungen";
 "lng_profile_bot_help" = "Hilfe";
+"lng_profile_bot_privacy" = "Bot Datenschutzerklärung";
 "lng_profile_invite_link_section" = "Einladungslink";
 "lng_profile_create_public_link" = "Öffentlichen Link erstellen";
 "lng_profile_edit_public_link" = "Öffentlichen Link bearbeiten";
@@ -570,6 +791,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_add_contact" = "Kontakt hinzufügen";
 "lng_profile_edit_contact" = "Bearbeiten";
 "lng_profile_enable_notifications" = "Benachrichtigungen";
+"lng_profile_clear_and_exit" = "Delete and exit";
 "lng_profile_clear_history" = "Verlauf löschen";
 "lng_profile_delete_conversation" = "Chat löschen";
 "lng_profile_clear_and_exit" = "Löschen und verlassen";
@@ -583,6 +805,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_unblock_user" = "Freigeben";
 "lng_profile_block_bot" = "Bot anhalten und blockieren";
 "lng_profile_unblock_bot" = "Bot freigeben";
+"lng_profile_restart_bot" = "Bot neu starten";
 "lng_profile_send_message" = "Nachricht senden";
 "lng_profile_share_contact" = "Kontakt teilen";
 "lng_profile_invite_to_group" = "In eine Gruppe einladen";
@@ -591,13 +814,16 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_add_participant" = "Neues Mitglied";
 "lng_profile_view_channel" = "Kanal anzeigen";
 "lng_profile_join_channel" = "Beitreten";
+"lng_profile_join_group" = "Gruppe beitreten";
 "lng_profile_delete_and_exit" = "Verlassen";
 "lng_profile_kick" = "Entfernen";
 "lng_profile_admin" = "Admin";
+"lng_profile_delete_removed" = "Löschen";
 "lng_profile_edit_permissions" = "Bearbeiten";
 "lng_profile_sure_kick" = "{user} aus der Gruppe entfernen?";
 "lng_profile_sure_kick_channel" = "{user} aus dem Kanal entfernen?";
 "lng_profile_sure_kick_admin" = "{user} als Administrator entfernen?";
+"lng_profile_sure_remove_admin" = "{User} von Admins entfernen?";
 "lng_profile_loading" = "Lade...";
 "lng_profile_shared_media" = "Geteilte Medien";
 "lng_profile_no_media" = "Noch keine Medien in diesem Chat";
@@ -615,6 +841,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_files_header" = "Dateien";
 "lng_profile_audios#one" = "{count} Sprachnachricht";
 "lng_profile_audios#other" = "{count} Sprachnachrichten";
+//"lng_profile_rounds#one" = "{count} Videonachricht";
+//"lng_profile_rounds#other" = "{count} Videonachrichten";
 "lng_profile_audios_header" = "Sprachnachrichten";
 "lng_profile_shared_links#one" = "{count} geteilter Link";
 "lng_profile_shared_links#other" = "{count} geteilte Links";
@@ -625,12 +853,123 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_drop_area_subtitle" = "um es als Gruppenbild auszuwählen";
 "lng_profile_drop_area_subtitle_channel" = "um es als Kanalbild auszuwählen";
 "lng_profile_top_bar_share_contact" = "Teilen";
+"lng_profile_chat_unaccessible" = "Gruppe ist nicht verfügbar";
+"lng_profile_about_section" = "Info";
+"lng_profile_description_section" = "Beschreibung";
+
+"lng_profile_info_section" = "Info";
+"lng_info_tab_media" = "Medien";
+"lng_info_mobile_label" = "Mobile";
+"lng_info_username_label" = "Username";
+"lng_info_bio_label" = "Bio";
+"lng_info_link_label" = "Link";
+"lng_info_location_label" = "Standort";
+"lng_info_about_label" = "Über";
+"lng_info_user_title" = "Benutzerinformation";
+"lng_info_bot_title" = "Bot Info";
+"lng_info_group_title" = "Gruppeninfo";
+"lng_info_channel_title" = "Kanalinfo";
+"lng_profile_enable_notifications" = "Benachrichtigungen";
+"lng_profile_send_message" = "Nachricht senden";
+"lng_info_add_as_contact" = "Als Kontakt hinzufügen";
+"lng_profile_shared_media" = "Freigegebene Medien";
+"lng_media_type_photos" = "Fotos";
+"lng_media_type_videos" = "Videos";
+"lng_media_type_songs" = "Audiodateien";
+"lng_media_type_files" = "Dateien";
+"lng_media_type_audios" = "Sprachnachricht";
+"lng_media_type_links" = "Geteilte Links";
+"lng_media_type_rounds" = "Video Nachrichten";
+"lng_profile_common_groups_section" = "Gemeinsame Gruppen";
+"lng_profile_share_contact" = "Kontakt teilen";
+"lng_info_edit_contact" = "Kontakt bearbeiten";
+"lng_info_delete_contact" = "Kontakt löschen";
+"lng_info_share_contact" = "Kontakt teilen";
+"lng_profile_clear_history" = "Historie löschen";
+"lng_profile_delete_conversation" = "Gespräch löschen";
+"lng_profile_block_user" = "Benutzer sperren";
+"lng_profile_unblock_user" = "Benutzer freigeben";
+"lng_profile_export_chat" = "Chatverlauf exportieren";
+"lng_profile_export_channel" = "Kanalverlauf exportieren";
+"lng_media_selected_photo#one" = "{count} Bild";
+"lng_media_selected_photo#other" = "{count} Bilder";
+"lng_media_selected_video#one" = "{count} Video";
+"lng_media_selected_video#other" = "{count} Videos";
+"lng_media_selected_song#one" = "{count} Audiodatei";
+"lng_media_selected_song#other" = "{count} Audiodateien";
+"lng_media_selected_file#one" = "{count} Datei";
+"lng_media_selected_file#other" = "{count} Dateien";
+"lng_media_selected_audio#one" = "{count} Sprachnachricht";
+"lng_media_selected_audio#other" = "{count} Sprachnachrichten";
+//"lng_media_selected_round#one" = "{count} Videonachricht";
+//"lng_media_selected_round#other" = "{count} Videonachrichten";
+"lng_media_selected_link#one" = "{count} Geteilter Link";
+"lng_media_selected_link#other" = "{count} Geteilte Links";
+"lng_media_photo_empty" = "Hier gibt es noch keine Fotos";
+"lng_media_video_empty" = "Noch keine Videos hier";
+"lng_media_song_empty" = "Noch gibt es keine Musikdateien hier.";
+"lng_media_file_empty" = "Noch keine Dateien hier";
+"lng_media_audio_empty" = "Hier sind noch keine Sprachnachrichten vorhanden";
+"lng_media_link_empty" = "Noch keine gemeinsamen Links hier";
+"lng_media_song_empty_search" = "Keine Musikdateien gefunden";
+"lng_media_file_empty_search" = "Keine Dateien gefunden";
+"lng_media_link_empty_search" = "Keine freigegebenen Links gefunden";
+
+"lng_manage_group_title" = "Gruppe verwalten";
+"lng_manage_channel_title" = "Kanal verwalten";
+"lng_manage_group_info" = "Gruppeninfo";
+"lng_manage_channel_info" = "Kanalinfo";
+"lng_manage_peer_recent_actions" = "Letzte Aktionen";
+"lng_manage_peer_members" = "Mitglieder";
+"lng_manage_peer_administrators" = "Administratoren";
+"lng_manage_peer_exceptions" = "Ausnahmen";
+"lng_manage_peer_removed_users" = "Gelöschte Benutzer";
+"lng_manage_peer_permissions" = "Berechtigungen";
+
+"lng_manage_peer_group_type" = "Gruppenart";
+"lng_manage_peer_channel_type" = "Kanaltyp";
+"lng_manage_peer_link_type" = "Verknüpfungsart";
+"lng_manage_peer_link_permanent" = "Permanenter Link";
+"lng_manage_peer_link_invite" = "Sofortlink";
+"lng_manage_private_group_title" = "Privat";
+"lng_manage_public_group_title" = "Öffentlich";
+"lng_manage_private_peer_title" = "Privat";
+"lng_manage_public_peer_title" = "Öffentlich";
+
+"lng_manage_discussion_group" = "Diskussion";
+"lng_manage_discussion_group_add" = "eine Gruppe hinzufügen";
+"lng_manage_linked_channel" = "Verknüpfter Kanal";
+"lng_manage_linked_channel_restore" = "Wiederherstellen des verknüpften Kanals";
+"lng_manage_discussion_group_about" = "Wählen Sie einen Gruppen-Chat zur Diskussion aus, der in Ihrem Kanal angezeigt wird.";
+"lng_manage_discussion_group_about_chosen" = "Ein Link zu {group} wird allen Teilnehmern im unteren Bereich angezeigt.";
+"lng_manage_discussion_group_create" = "Eine neue Gruppe erstellen";
+"lng_manage_discussion_group_unlink" = "Gruppe trennen";
+"lng_manage_discussion_group_posted" = "Alles, was Sie im Kanal posten, wird an diese Gruppe weitergeleitet.";
+"lng_manage_discussion_group_sure" = "Möchtest du {group} zum Diskussionsforum für {channel} machen?";
+"lng_manage_linked_channel_private" = "Jedes Mitglied dieser Gruppe kann Nachrichten im Kanal sehen.";
+"lng_manage_discussion_group_private" = "Jeder vom Kanal kann Nachrichten in dieser Gruppe sehen.";
+"lng_manage_discussion_group_link" = "Link-Gruppe";
+"lng_manage_linked_channel_private_status" = "privater Kanal";
+"lng_manage_discussion_group_private_status" = "private Gruppe";
+"lng_manage_linked_channel_about" = "{channel} verbindet die Gruppe als Diskussionsforum.";
+"lng_manage_linked_channel_unlink" = "Kanal trennen";
+"lng_manage_linked_channel_posted" = "Alle neuen Nachrichten, die in diesem Kanal veröffentlicht werden, werden an die Gruppe weitergeleitet.";
+"lng_manage_discussion_group_warning" = "\"Chat-Verlauf für neue Mitglieder\" wird auf **Sichtbar** geschaltet.";
+
+"lng_manage_history_visibility_title" = "Chat-Verlauf für neue Mitglieder";
+"lng_manage_history_visibility_shown" = "Sichtbar";
+"lng_manage_history_visibility_shown_about" = "Neue Mitglieder sehen Nachrichten, die vor dem Beitritt gesendet wurden.";
+"lng_manage_history_visibility_hidden" = "Versteckt";
+"lng_manage_history_visibility_hidden_about" = "Neue Mitglieder sehen keine früheren Nachrichten.";
+"lng_manage_history_visibility_hidden_legacy" = "Neue Mitglieder werden nicht mehr als 100 frühere Nachrichten sehen.";
 
 "lng_report_title" = "Kanal melden";
 "lng_report_group_title" = "Gruppe melden";
 "lng_report_bot_title" = "Bot melden";
+"lng_report_message_title" = "Nachricht melden";
 "lng_report_reason_spam" = "Spam";
 "lng_report_reason_violence" = "Gewalt";
+"lng_report_reason_child_abuse" = "Kindesmissbrauch";
 "lng_report_reason_pornography" = "Pornografie";
 "lng_report_reason_other" = "Sonstiges";
 "lng_report_reason_description" = "Beschreibung";
@@ -643,6 +982,9 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_channel_members" = "Mitglieder";
 "lng_channel_only_last_shown#one" = "Nur {count} letztes Mitgled wird hier angezeigt";
 "lng_channel_only_last_shown#other" = "Nur {count} letzte Mitgleder werden hier angezeigt";
+"lng_channel_add_users" = "Benutzer hinzufügen";
+"lng_channel_add_removed" = "Benutzer entfernen";
+"lng_channel_add_exception" = "Ausnahme hinzufügen";
 "lng_channel_admins" = "Administratoren";
 "lng_channel_add_admin" = "Administrator hinzufügen";
 "lng_channel_admins_too_much" = "Leider kannst du keine weiteren Admins dieser Gruppe hinzufügen, bitte erst welche löschen.";
@@ -650,8 +992,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_channel_admin_status_promoted_by" = "Befördert von {user}";
 "lng_channel_admin_status_not_admin" = "Kein Administrator";
 "lng_channel_banned_status_restricted_by" = "Eingeschränkt von {user}";
+"lng_channel_banned_status_removed_by" = "Entfernt durch {user}";
 
 "lng_group_blocked_list_about" = "Gesperrte Nutzer werden von der Gruppe entfernt und können nur durch Admins erneut hinzugefügt werden. \nEinladungslinks funktionieren nicht.";
+"lng_group_removed_list_about" = "Benutzer, die von Admins aus der Gruppe entfernt wurden, können sich nicht mehr über Einladungslinks wieder der Gruppe anschließen.";
 
 "lng_chat_all_members_admins" = "Alle Mitglieder Sind Admins";
 "lng_chat_about_all_admins" = "Gruppenmitglieder können neue Leute hinzufügen sowie den Gruppennamen und das Bild ändern.";
@@ -674,7 +1018,13 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_create_public_group_about" = "Öffentliche Gruppen kann jeder über die Suche finden, gesamter Chatverlauf ist für alle einsehbar und jeder kann der Gruppe beitreten";
 "lng_create_private_group_title" = "Private Gruppe";
 "lng_create_private_group_about" = "Nur eingeladene Nutzer können die Gruppe betreten und den gesamten Chatverlauf einsehen";
+"lng_create_permanent_link_title" = "Permanente Verknüpfung";
+"lng_create_invite_link_title" = "Sofortlink";
+"lng_create_invite_link_about" = "Leute können beitreten, wenn sie eingeladen wurden, einen Einladungslink haben oder von \"Nearby Gruppen\"sind";
+
 "lng_create_group_skip" = "Überspringen";
+
+"lng_create_channel_link_about" = "Du kannst a-z, 0-9 und Unterstriche verwenden. \nMindestlänge sind 5 Zeichen.";
 
 "lng_create_channel_link_invalid" = "Dieser Link ist ungültig";
 "lng_create_channel_link_occupied" = "Der Linkname ist bereits belegt";
@@ -698,6 +1048,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_sure_delete_channel" = "Sicher, dass du diesen Kanal löschen willst? Alle Mitglieder und Nachrichten werden entfernt.";
 "lng_sure_leave_group" = "Diese Gruppe wirklich verlassen?\nDas kann man nicht rückgängig machen.";
 "lng_sure_delete_group" = "Sicher, dass du diese Gruppe löschen willst? Alle Mitglieder und Nachrichten werden entfernt.";
+"lng_sure_delete_saved_messages" = "Sind Sie sicher, dass Sie alle Ihre gespeicherten Nachrichten löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.";
 
 "lng_message_empty" = "Leere Nachricht";
 "lng_message_unsupported" = "Diese Nachricht wird von deiner Telegram Desktop Version nicht unterstützt. Bitte aktualisiere sie in den Einstellungen oder über {link}";
@@ -758,6 +1109,14 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_action_payment_done_for" = "Du hast erfolgreich {amount} an {user} für {invoice} übermittelt";
 "lng_action_took_screenshot" = "{from} hat ein Bildschirmfoto gemacht!";
 "lng_action_you_took_screenshot" = "Du hast ein Bildschirmfoto gemacht!";
+"lng_action_bot_allowed_from_domain" = "Du hast diesem Bot erlaubt, dir eine Nachricht zu schicken, wenn du dich bei {domain} angemeldet hast.";
+"lng_action_secure_values_sent" = "{user} erhielt die folgenden Dokumente: {documents}";
+"lng_action_secure_personal_details" = "persönliche Daten";
+"lng_action_secure_proof_of_identity" = "Identitätsnachweis";
+"lng_action_secure_address" = "Adresse";
+"lng_action_secure_proof_of_address" = "Adressnachweis";
+"lng_action_secure_phone" = "Telefonnummer";
+"lng_action_secure_email" = "email aAdresse";
 
 "lng_ttl_photo_received" = "{from} hat dir ein selbstzerstörendes Bild gesendet. Um es anzuzeigen, bitte Handy benutzen.";
 "lng_ttl_photo_sent" = "Du hast ein selbstzerstörendes Bild gesendet.";
@@ -778,6 +1137,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_migrate_feature4" = "— Mitteilungen sind standardmäßig stumm";
 "lng_profile_migrate_button" = "In Supergruppe ändern";
 "lng_profile_migrate_sure" = "Wirklich diese Gruppe in eine Supergruppe ändern? Das kann nicht rückgängig gemacht werden.";
+"lng_profile_migrate_button" = "Upgrade to supergroup";
 "lng_profile_convert_button" = "In Supergruppe ändern";
 "lng_profile_convert_title" = "In Supergruppe ändern";
 "lng_profile_convert_about" = "Supergruppen:";
@@ -787,16 +1147,20 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_profile_convert_feature4" = "— Gründer kann Gruppe öffentlich machen";
 "lng_profile_convert_warning" = "{bold_start}Wichtig:{bold_end} Die Änderung in eine Supergruppe kann nicht rückgängig gemacht werden.";
 "lng_profile_convert_confirm" = "Ändern";
+"lng_profile_add_more_after_create" = "You will be able to add more members after you create the group.";
 "lng_profile_add_more_after_upgrade#one" = "Du kannst nach der Änderung der Gruppe in eine Supergruppe bis zu  {count} Mitglied hinzufügen.";
 "lng_profile_add_more_after_upgrade#other" = "Du kannst nach der Änderung der Gruppe in eine Supergruppe bis zu {count} Mitglieder hinzufügen.";
 
 "lng_channel_not_accessible" = "Dieser Kanal ist nicht zugänglich";
 "lng_group_not_accessible" = "Diese Gruppe ist nicht zugänglich.";
+"lng_group_full" = "Sorry, diese Gruppe ist voll.";
 
 "lng_channels_too_much_public_about" = "Du bereits zu viele öffentliche Benutzernamen reserviert. Du kannst jederzeit einen bestehenden Benutzernamen von deinen Gruppen oder Kanälen entfernen.";
 "lng_channels_too_much_public_revoke_confirm_group" = "Link {link} wirklich widerrufen?\n\nDie Gruppe «{group}» wird dann nicht mehr öffentlich sein.";
 "lng_channels_too_much_public_revoke_confirm_channel" = "Link {link} wirklich widerrufen?\n\nDer Kanal «{group}» wird dann nicht mehr öffentlich sein.";
 "lng_channels_too_much_public_revoke" = "Widerrufen";
+"lng_channels_too_much_public_other" = "Entschuldigung, der Zielbenutzer hat bereits zu viele öffentliche Gruppen oder Kanäle. Bitten Sie Ihn, zuerst eine ihrer bestehenden Gruppen oder Kanäle privat zu machen.";
+"lng_channels_too_much_located_other" = "Entschuldigung, der Zielbenutzer hat bereits zu viele ortsgebundene Gruppen. Bitte Sie ihn, zuerst einen seiner bestehenden zu löschen oder zu übertragen.";
 
 "lng_group_invite_bad_link" = "Der Einladungslink ist nicht mehr gültig.";
 "lng_group_invite_want_join" = "Möchtest du der Gruppe «{title}» beitreten?";
@@ -809,12 +1173,14 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_group_invite_link" = "Einladungslink:";
 "lng_group_invite_create" = "Neuer Link";
 "lng_group_invite_about" = "Jeder, der Telegram installiert hat,\nkann anhand dieses Links in deine Gruppe.";
+"lng_group_invite_about_channel" = "Telegrammbenutzer können unserem Kanal beitreten, \nindem sie diesem Link folgen.";
 "lng_group_invite_create_new" = "Link widerrufen";
 "lng_group_invite_about_new" = "Dein vorheriger Link wird ungültig, wenn du einen neuen erstellst.";
 "lng_group_invite_copied" = "Einladungslink wurde kopiert.";
 "lng_group_invite_no_room" = "Leider kannst du dieser Gruppe nicht mehr beitreten, da sie bereits voll ist.";
 
 "lng_channel_public_link_copied" = "Link in die Zwischenablage kopiert.\n";
+"lng_context_about_private_link" = "Dieser Link funktioniert nur für Mitglieder dieses Chats.";
 
 "lng_forwarded" = "Weitergeleitet von {user}";
 "lng_forwarded_date" = "Original: {date}";
@@ -822,9 +1188,14 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_forwarded_via" = "Weitergeleitet von {user} via {inline_bot}";
 "lng_forwarded_channel_via" = "Weitergeleitet aus {channel} via {inline_bot}";
 "lng_forwarded_signed" = "{channel} ({user})";
+"lng_forwarded_hidden" = "Das Konto wurde vom Benutzer versteckt.";
+"lng_signed_author" = "Author: {user}";
 "lng_in_reply_to" = "Antwort auf";
 "lng_edited" = "bearbeitet";
 "lng_edited_date" = "Bearbeitet: {date}";
+"lng_admin_badge" = "Administrator";
+"lng_channel_badge" = "Kanal";
+"lng_fast_reply" = "Wiederholung";
 "lng_cancel_edit_post_sure" = "Bearbeitung abbrechen?";
 "lng_cancel_edit_post_yes" = "Ja";
 "lng_cancel_edit_post_no" = "Nein";
@@ -859,6 +1230,20 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_media_auto_private_chats" = "Chats";
 "lng_media_auto_groups" = "Gruppen und Kanäle";
 "lng_media_auto_play" = "Automatisch Abspielen";
+"lng_media_auto_in_private" = "In private chats";
+"lng_media_auto_in_groups" = "In Gruppen";
+"lng_media_auto_in_channels" = "In Kanälen";
+"lng_media_auto_title" = "Automatischer Download";
+"lng_media_photo_title" = "Bilder";
+"lng_media_video_title" = "Video Dateien";
+"lng_media_audio_title" = "Sprachnachrichten";
+"lng_media_video_messages_title" = "Runde Videonachrichten";
+"lng_media_file_title" = "Dateien";
+"lng_media_music_title" = "Musik";
+"lng_media_animation_title" = "Animierte GIFs";
+"lng_media_size_limit" = "Begrenzung nach Größe";
+"lng_media_size_up_to" = "bis zu {size}";
+"lng_media_chat_background" = "Chat Hintergrund";
 
 "lng_emoji_category0" = "Häufig genutzt";
 "lng_emoji_category1" = "Personen";
@@ -869,6 +1254,11 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_emoji_category6" = "Objekte";
 "lng_emoji_category7" = "Symbole & Flaggen";
 "lng_emoji_hide_panel" = "Hier klicken, um Emoji Sidebar zu verstecken";
+"lng_emoji_manage_sets" = "Emoji-Set auswählen";
+"lng_emoji_set_ready" = "Heruntergeladen";
+"lng_emoji_set_active" = "Current set";
+"lng_emoji_set_download" = "Download {size}";
+"lng_emoji_set_loading" = "{percent}, {progress}";
 
 "lng_recent_stickers" = "Häufig genutzt";
 "lng_faved_stickers" = "Favoriten";
@@ -877,6 +1267,13 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_group_stickers" = "Gruppen-Sticker";
 "lng_group_stickers_description" = "Paket wählen, welches alle in der Gruppe sehen können.";
 "lng_group_stickers_add" = "Sticker-Paket wählen";
+
+"lng_group_about_header" = "Du hast eine Gruppe angelegt.";
+"lng_group_about_text" = "Gruppen können:";
+"lng_group_about1" = "Bis zu 100.000 Mitglieder";
+"lng_group_about2" = "Dauerhafter Chat-Verlauf";
+"lng_group_about3" = "Öffentliche Links wie t.me/title";
+"lng_group_about4" = "Administratoren mit unterschiedlichen Rechten";
 
 "lng_switch_stickers" = "Sticker";
 "lng_switch_emoji" = "Emoji";
@@ -907,11 +1304,17 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_stickers_count#one" = "{count} Sticker";
 "lng_stickers_count#other" = "{count} Sticker";
 "lng_stickers_masks_pack" = "Das ist ein Masken-Paket. Du kannst Masken nur im Editor unserer mobilen Apps verwenden.";
+"lng_stickers_attached_sets" = "Sets von beigefügten Stickern";
 "lng_stickers_group_set" = "Gruppen-Sticker";
 "lng_stickers_remove_group_set" = "Gruppen-Sticker entfernen?";
 "lng_stickers_group_from_your" = "Sticker-Paket auswählen";
+"lng_stickers_group_from_featured" = "Wählen Sie aus den Trendstickern aus.";
+"lng_stickers_search_sets" = "Aufkleber-Sets suchen";
+"lng_stickers_nothing_found" = "Keine Sticker gefunden";
+"lng_stickers_remove_pack_confirm" = "Entfernen";
 
 "lng_in_dlg_photo" = "Bild";
+"lng_in_dlg_album" = "Album";
 "lng_in_dlg_video" = "Video";
 "lng_in_dlg_audio_file" = "Audiodatei";
 "lng_in_dlg_contact" = "Kontakt";
@@ -920,16 +1323,24 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_in_dlg_file" = "Datei";
 "lng_in_dlg_sticker" = "Sticker";
 "lng_in_dlg_sticker_emoji" = "{emoji} Sticker";
+"lng_in_dlg_poll" = "Umfrage";
 
 "lng_ban_user" = "Nutzer sperren";
 "lng_delete_all_from" = "Alles von diesem Nutzer löschen";
 "lng_report_spam" = "Spam melden";
 "lng_report_spam_hide" = "Schließen";
-"lng_report_spam_thanks" = "Danke!";
-"lng_report_spam_sure" = "Wirklich diesen Nutzer melden?";
 "lng_report_spam_sure_group" = "Spam in dieser Gruppe melden?";
-"lng_report_spam_sure_channel" = "Möchtest du wirklich Spam in diesem Kanal melden?";
+"lng_report_spam_and_leave" = "Spam melden und verlassen";
+"lng_report_spam_done" = "Vielen Dank für Ihren Bericht.";
 "lng_report_spam_ok" = "Melden";
+"lng_new_contact_block" = "Benutzer sperren";
+"lng_new_contact_block_done" = "{user} ist nun blockiert.";
+"lng_new_contact_add" = "Kontakt hinzufügen";
+"lng_new_contact_share" = "Meine Telefonnummer teilen";
+"lng_new_contact_share_done" = "{user} kann nun deine Telefonnummer sehen.";
+"lng_new_contact_share_sure" = "Sind Sie sicher, dass Sie Ihre Telefonnummer {phone} mit {user} teilen möchten?";
+"lng_new_contact_add_name" = "Hinzufügen von {user} zu Kontakten";
+"lng_new_contact_add_done" = "{user} ist jetzt in Ihrer Kontaktliste.";
 "lng_cant_send_to_not_contact" = "Derzeit kannst du nur Personen schreiben, wenn ihr eure Nummern ausgetauscht habt. {more_info}";
 "lng_cant_invite_not_contact" = "Du kannst nur Personen hinzufügen, wenn ihr eure Nummern ausgetauscht habt. {more_info}";
 "lng_cant_send_to_not_contact_flood" = "Heute hast du zu viele nicht-gemeinsame Kontakte angeschrieben, versuche es bitte morgen wieder. Du kannst heute nur noch Leuten antworten, die dir zuerst eine Nachricht senden.";
@@ -938,10 +1349,13 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_cant_invite_banned" = "Nur Admins können diesen Nutzer hinzufügen.";
 "lng_cant_invite_privacy" = "Du kannst mit diesem Nutzer keine Gruppe erstellen, weil er es nicht erlaubt.";
 "lng_cant_invite_privacy_channel" = "Du kannst diesen Nutzer keinen Kanälen hinzufügen, weil er es nicht erlaubt.";
+"lng_cant_invite_bot_to_channel" = "Leider können Bots nur als Administratoren zu Kanälen hinzugefügt werden.";
+"lng_cant_invite_offer_admin" = "Bots können nur als Administratoren hinzugefügt werden.";
 "lng_cant_delete_group#one" = "Über die App kannst du derzeit keine Gruppen mit mehr als {count} Mitglied löschen. Bitte melde dich bei unserem Support Chat, wenn du diese Gruppe löschen lassen möchtest.";
 "lng_cant_delete_group#other" = "Über die App kannst du derzeit keine Gruppen mit mehr als {count} Mitgliedern löschen. Bitte melde dich bei unserem Support Chat, wenn du diese Gruppe löschen lassen möchtest.";
 "lng_cant_delete_channel#one" = "Über die App kannst du derzeit keine Kanäle mit mehr als {count} Mitglied löschen. Bitte melde dich bei unserem Support Chat, wenn du diesen Kanal löschen lassen möchtest.";
 "lng_cant_delete_channel#other" = "Über die App kannst du derzeit keinen Kanäle mit mehr als {count} Mitgliedern löschen. Bitte melde dich bei unserem Support Chat, wenn du diesen Kanal löschen lassen möchtest.";
+"lng_cant_invite_make_admin" = "Make admin";
 "lng_cant_do_this" = "Verzeihung. Das ist leider nicht möglich.";
 
 "lng_send_button" = "Senden";
@@ -956,9 +1370,23 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_from_draft" = "Entwurf";
 "lng_bot_description" = "Was kann dieser Bot?";
 "lng_unblock_button" = "Freigeben";
+"lng_restart_button" = "Restart";
 "lng_channel_join" = "Kanal beitreten";
 "lng_channel_mute" = "Stumm";
 "lng_channel_unmute" = "Stumm aus";
+"lng_channel_discuss" = "Diskutieren";
+"lng_saved_messages" = "Gespeicherte Nachrichten";
+"lng_saved_short" = "Speichern";
+"lng_saved_forward_here" = "Hier Nachrichten weiterleiten für den schnellen Zugriff";
+
+"lng_archived_name" = "Archivierte Chats";
+"lng_archived_add" = "Archiv";
+"lng_archived_remove" = "Unarchiv";
+"lng_archived_added" = "Chat archiviert. \nStummgeschaltete Chats bleiben archiviert, wenn neue Nachrichten eintreffen.";
+"lng_archived_removed" = "Chat aus Ihrem Archiv wiederhergestellt.";
+"lng_archived_last_list" = "{accumulated}, {chat}";
+"lng_archived_last#one" = "{chats} und {count} mehr Chat";
+"lng_archived_last#other" = "{chats} und {count} mehr Chats";
 
 "lng_dialogs_text_with_from" = "{from_part} {message}";
 "lng_dialogs_text_from_wrapped" = "{from}:";
@@ -966,11 +1394,16 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_dialogs_text_media_wrapped" = "{media},";
 "lng_dialogs_show_all_chats" = "Alle Chats zeigen";
 "lng_dialogs_hide_muted_chats" = "Stummgeschaltete Chats verstecken";
+"lng_dialogs_skip_archive_in_search" = "Ergebnisse aus dem Archiv überspringen";
+"lng_dialogs_show_archive_in_search" = "Mit Ergebnissen aus dem Archiv";
 
 "lng_open_this_link" = "Diesen Link öffnen?";
 "lng_open_link" = "Öffnen";
 "lng_allow_bot_pass" = "Darf {bot_name} deinen Anzeigenamen und deine id mit Internetseiten teilen, die du mit diesem Bot öffnest?";
 "lng_allow_bot" = "Erlauben";
+"lng_url_auth_open_confirm" = "Möchten Sie {link} öffnen?";
+"lng_url_auth_login_option" = "Melden Sie sich bei {domain} als {user} an.";
+"lng_url_auth_allow_messages" = "Erlaube {bot}, mir Nachrichten zu schicken.";
 
 "lng_bot_start" = "Starten";
 "lng_bot_choose_group" = "Gruppe auswählen";
@@ -1016,6 +1449,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_user_action_choose_contact" = "{user} wählt einen Kontakt aus";
 "lng_unread_bar#one" = "{count} ungelesene Nachricht";
 "lng_unread_bar#other" = "{count} ungelesene Nachrichten";
+//"lng_unread_bar_some" = "Ungelesene Nachrichten";
 
 "lng_maps_point" = "Standort";
 "lng_save_photo" = "Bild speichern";
@@ -1028,51 +1462,56 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_duration_played" = "{played} / {duration}";
 "lng_date_and_duration" = "{date}, {duration}";
 "lng_choose_image" = "Bild auswählen";
+"lng_choose_file" = "Datei auswählen";
 "lng_choose_files" = "Dateien auswählen";
 "lng_game_tag" = "Spiel";
 
 "lng_context_view_profile" = "Profil öffnen";
 "lng_context_view_group" = "Gruppeninfo zeigen";
 "lng_context_view_channel" = "Kanalinfo anzeigen";
+//"lng_context_view_feed_info" = "Feed Informationen anzeigen";
 "lng_context_pin_to_top" = "Oben anheften";
 "lng_context_unpin_from_top" = "Oben entfernen";
+"lng_context_mark_unread" = "Als ungelesen markieren";
+"lng_context_mark_read" = "Als gelesen markieren";
+"lng_context_archive_expand" = "Erweitern";
+"lng_context_archive_collapse" = "Einklappen";
+"lng_context_archive_to_menu" = "Zum Hauptmenü wechseln";
+"lng_context_archive_to_list" = "In die Chat-Liste verschieben";
+"lng_context_archive_to_menu_info" = "Archiv in das Hauptmenü verschoben!\nSie können es aus dem Kontextmenü der Archiv-Schaltfläche zurückholen.";
 
 "lng_context_promote_admin" = "Zum Admin machen";
 "lng_context_edit_permissions" = "Berechtigungen bearbeiten";
 "lng_context_restrict_user" = "Nutzer einschränken";
 "lng_context_remove_from_group" = "Aus Gruppe entfernen";
-
+"lng_context_add_to_group" = "Zur Gruppe hinzufügen";
 "lng_context_copy_link" = "Link kopieren";
 "lng_context_copy_post_link" = "Nachrichtenlink kopieren";
 "lng_context_copy_email" = "E-Mail-Adresse kopieren";
 "lng_context_copy_hashtag" = "Hashtag kopieren";
 "lng_context_copy_mention" = "Benutzername kopieren";
 "lng_context_save_image" = "Bild speichern unter...";
-"lng_context_forward_image" = "Bild weiterleiten";
-"lng_context_delete_image" = "Bild löschen";
 "lng_context_copy_image" = "Bild kopieren";
-"lng_context_close_image" = "Bild schließen";
 "lng_context_cancel_download" = "Download abbrechen";
 "lng_context_show_in_folder" = "Im Ordner anzeigen";
 "lng_context_show_in_finder" = "Im Finder zeigen";
-"lng_context_save_video" = "Video speichern unter...";
+"lng_context_save_video" = "Video speichern unter.....";
 "lng_context_save_audio_file" = "Audiodatei speichern unter...";
 "lng_context_save_audio" = "Sprachnachricht speichern unter...";
 "lng_context_pack_info" = "Sticker-Paket";
 "lng_context_pack_add" = "Sticker hinzufügen";
 "lng_context_save_file" = "Datei speichern unter...";
-"lng_context_forward_file" = "Datei weiterleiten";
-"lng_context_delete_file" = "Datei löschen";
-"lng_context_close_file" = "Datei schließen";
 "lng_context_copy_text" = "Text kopieren";
 "lng_context_open_gif" = "GIF öffnen";
 "lng_context_save_gif" = "GIF speichern";
+"lng_context_attached_stickers" = "Beigefügte Stickers";
 "lng_context_to_msg" = "Zur Nachricht";
 "lng_context_reply_msg" = "Antworten";
 "lng_context_edit_msg" = "Bearbeiten";
 "lng_context_forward_msg" = "Nachricht weiterleiten";
 "lng_context_delete_msg" = "Nachricht löschen";
 "lng_context_select_msg" = "Nachricht auswählen";
+"lng_context_report_msg" = "Reportmeldung";
 "lng_context_pin_msg" = "Nachricht anheften";
 "lng_context_unpin_msg" = "Nachricht entfernen";
 "lng_context_cancel_upload" = "Upload abbrechen";
@@ -1081,9 +1520,18 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_context_forward_selected" = "Auswahl weiterleiten";
 "lng_context_delete_selected" = "Auswahl löschen";
 "lng_context_clear_selection" = "Auswahl aufheben";
+"lng_context_forward_image" = "Bild weiterleiten";
+"lng_context_delete_image" = "Bild löschen";
+"lng_context_close_image" = "Bild schließen";
+"lng_context_save_video" = "Video speichern unter...";
+"lng_context_forward_file" = "Datei weiterleiten";
+"lng_context_delete_file" = "Datei löschen";
+"lng_context_close_file" = "Datei schließen";
+
 "lng_really_send_image" = "Willst du dieses Bild senden?";
 "lng_really_send_file" = "Willst du diese Datei senden?";
 "lng_really_share_contact" = "Willst du diesen Kontakt senden?";
+
 "lng_send_images_compress#one" = "Bild komprimieren";
 "lng_send_images_compress#other" = "Bilder komprimieren";
 "lng_send_image_non_local" = "{name} befindet sich nicht direkt auf dem Gerät";
@@ -1094,10 +1542,15 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_send_images_selected#other" = "{count} Bilder ausgewählt";
 "lng_send_photos#one" = "{count} Bild senden";
 "lng_send_photos#other" = "{count} Bilder senden";
+"lng_send_separate_photos" = "Als separate Fotos versenden";
+"lng_send_separate_photos_videos" = "Als separates Medium versenden";
 "lng_send_files_selected#one" = "{count} Datei ausgewählt";
 "lng_send_files_selected#other" = "{count} Dateien ausgewählt";
 "lng_send_files#one" = "{count} Datei senden";
 "lng_send_files#other" = "{count} Dateien senden";
+"lng_send_album" = "Als Album senden";
+"lng_send_photo" = "Als Foto versenden";
+"lng_send_file" = "Als Datei senden";
 
 "lng_forward_choose" = "Empfänger wählen...";
 "lng_forward_cant" = "Weiterleiten nicht möglich :(";
@@ -1129,6 +1582,10 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_contact_phone" = "Telefonnummer";
 "lng_enter_contact_data" = "Neuer Kontakt";
+"lng_contact_mobile_hidden" = "Handy versteckt";
+"lng_contact_phone_after" = "Die Telefonnummer wird angezeigt, sobald {user} Sie als Kontakt hinzufügt hat.";
+"lng_contact_share_phone" = "Meine Telefonnummer teilen";
+"lng_contact_phone_will_be_shared" = "Du kannst dein Handy für {user} sichtbar machen.";
 "lng_edit_group_title" = "Gruppennamen ändern";
 "lng_edit_contact_title" = "Kontaktnamen ändern";
 "lng_edit_channel_title" = "Kanal bearbeiten";
@@ -1166,7 +1623,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_selected_upload_stop" = "Stoppen";
 "lng_selected_delete_sure_this" = "Diese Nachricht wirklich löschen?";
 "lng_selected_delete_sure#one" = "Möchtest du {count} Nachricht löschen?";
-"lng_selected_delete_sure#other" = "Möchtest du {count} Nachrichten löschen?";
+"lng_selected_delete_sure#other" = "Möchtest du {count} Nachrichten löschen?";
 "lng_delete_photo_sure" = "Dieses Bild wirklich löschen?";
 "lng_delete_for_everyone_hint#one" = "Das wird es bei allen im Chat löschen.";
 "lng_delete_for_everyone_hint#other" = "Das wird sie bei allen im Chat löschen.";
@@ -1174,15 +1631,24 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_delete_for_me_chat_hint#other" = "Das wird sie nur bei dir löschen und nicht bei anderen Teilnehmern.";
 "lng_delete_for_me_hint#one" = "Das wird es nur bei dir löschen.";
 "lng_delete_for_me_hint#other" = "Das wird sie nur bei dir löschen.";
+"lng_selected_unsend_about_user_one" = "Sie können die Nachricht, die Sie aus dem Posteingang von {user} gesendet haben, auch wiederrufen, indem Sie \"Meine Nachrichten wiederrufen\" aktivieren.";
+"lng_selected_unsend_about_user#one" = "Sie können auch die {count}-Nachricht wiederrufen, die Sie aus dem Posteingang von {user} gesendet haben, indem Sie \"Meine Nachrichten wiederrufen\" aktivieren.";
+"lng_selected_unsend_about_user#other" = "Sie können auch die {Anzahl} von Nachrichten, die Sie aus dem Posteingang von {Benutzer} gesendet haben, löschen, indem Sie \"Meine Nachrichten wiederrufen\" aktivieren.";
+"lng_selected_unsend_about_group_one" = "Sie können die Nachricht, die Sie gesendet haben, auch aus den Posteingangsfächern anderer Gruppenmitglieder löschen, indem Sie \"Meine Nachrichten wiederrufen\" aktivieren.";
+"lng_selected_unsend_about_group#one" = "Sie können die {count}-Nachricht, die Sie gesendet haben, auch aus den Posteingangsfächern anderer Gruppenmitglieder löschen, indem Sie \"Meine Nachrichten wiederrufen\" aktivieren.";
+"lng_selected_unsend_about_group#other" = "Sie können auch die {Anzahl} von Nachrichten, die Sie aus den Posteingangsfächern anderer Gruppenmitglieder gesendet haben, löschen, indem Sie \"Meine Nachrichten wiederrufen\" aktivieren.";
 "lng_delete_for_everyone_check" = "Bei allen löschen";
 "lng_delete_for_other_check" = "Bei {user} löschen";
+"lng_delete_for_other_my" = "Meine Nachrichten löschen";
 "lng_box_delete" = "Löschen";
 "lng_box_leave" = "Verlassen";
 
 "lng_about_version" = "Version {version}";
-"lng_about_text_1" = "Offizielle Messaging App basierend auf [a href=\"https://core.telegram.org/api\"]Telegram API[/a]\nfür Geschwindigkeit und Sicherheit.";
-"lng_about_text_2" = "Diese Software steht unter der [a href=\"https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE\"]GNU GPL[/a] Version 3, der Quelltext ist bei [a href=\"https://github.com/telegramdesktop/tdesktop\"]GitHub[/a] verfügbar.";
-"lng_about_text_3" = "Fragen? Besuche doch {faq_open}unsere FAQ{faq_close} für mehr Infos.";
+"lng_about_text1" = "Official free messaging app based on {api_link}\nfor speed and security.";
+"lng_about_text1_api" = "Telegram API";
+"lng_about_text2" = "This software is licensed under {gpl_link} version 3.\nSource code is available on {github_link}.";
+"lng_about_text3" = "Visit {faq_link} for more info.";
+"lng_about_text3_faq" = "Telegram FAQ";
 "lng_about_done" = "Fertig";
 
 "lng_search_no_results" = "Keine Nachrichten gefunden";
@@ -1202,14 +1668,16 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_mediaview_group_photo" = "Bild";
 "lng_mediaview_channel_photo" = "Bild";
 "lng_mediaview_profile_photo" = "Profilbild";
-"lng_mediaview_file_n_of_count" = "{file} {n} von {count}";
-"lng_mediaview_n_of_count" = "Bild {n} von {count}";
+"lng_mediaview_file_n_of_amount" = "{file} {n} von {amount}";
+"lng_mediaview_n_of_amount" = "Foto {n} von {amount}";
 "lng_mediaview_doc_image" = "Datei";
 "lng_mediaview_today" = "heute um {time}";
 "lng_mediaview_yesterday" = "gestern um {time}";
 "lng_mediaview_date_time" = "{date} um {time}";
 
-"lng_mediaview_saved" = "Bild wurde im [c]Downloads[/c] Ordner gespeichert";
+"lng_mediaview_saved_to" = "Das Bild wurde in Ihrem {downloads} Ordner gespeichert.";
+"lng_mediaview_downloads" = "Downloads";
+"lng_mediaview_video_loading" = "Wird geladen - {percent}";
 
 "lng_theme_preview_title" = "Themenvorschau";
 "lng_theme_preview_generating" = "Erstelle Vorschau des Farbthemas...";
@@ -1223,6 +1691,20 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_new_version_text" = "— Verbesserte Videonachrichten: Fortschrittsanzeige (Rahmen um die Videonachricht), Bild-in-Bild-Unterstützung, Anzeige der verbleibenden Zeit.\n— Sprach- und Videonachrichten werden nun automatisch nacheinander abgespielt.";
 
 "lng_menu_insert_unicode" = "Unicode-Steuerzeichen einfügen";
+"lng_menu_formatting" = "Formatierung";
+"lng_menu_formatting_bold" = "Bold";
+"lng_menu_formatting_italic" = "Italic";
+"lng_menu_formatting_underline" = "Unterstreichen";
+"lng_menu_formatting_strike_out" = "Durchgestrichen";
+"lng_menu_formatting_monospace" = "Monospace";
+"lng_menu_formatting_link_create" = "Link erstellen";
+"lng_menu_formatting_link_edit" = "Link bearbeiten";
+"lng_menu_formatting_clear" = "Klartext";
+"lng_formatting_link_create_title" = "Link Titel erstellen";
+"lng_formatting_link_edit_title" = "Link Titel bearbeiten";
+"lng_formatting_link_text" = "Text";
+"lng_formatting_link_url" = "URL";
+"lng_formatting_link_create" = "Erstellen";
 
 "lng_full_name" = "{first_name} {last_name}";
 
@@ -1280,7 +1762,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_call_box_status_today" = "{time}";
 "lng_call_box_status_yesterday" = "Gestern um {time}";
 "lng_call_box_status_date" = "{date} um {time}";
-"lng_call_box_status_group" = "({count}) {status}";
+"lng_call_box_status_group" = "({amount}) {status}";
 
 "lng_call_outgoing" = "Ausgehender Anruf";
 "lng_call_incoming" = "Eingehender Anruf";
@@ -1293,17 +1775,27 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_call_rate_label" = "Gesprächsqualität bewerten";
 "lng_call_rate_comment" = "Beschreibung (optional)";
 
+"lng_no_mic_permission" = "Telegramm benötigt Zugriff auf Ihr Mikrofon, damit Sie Anrufe tätigen und Sprachnachrichten aufnehmen können.";
+
 "lng_player_message_today" = "Heute um {time}";
 "lng_player_message_yesterday" = "Gestern um {time}";
 "lng_player_message_date" = "{date} um {time}";
+//"lng_player_cant_stream" = "Diese Datei kann nicht abgespielt werden, \nbevor sie vollständig heruntergeladen ist.\n\nMöchten Sie sie herunterladen?";
+//"lng_player_download" = "Download";
 
 "lng_rights_edit_admin" = "Administrator bearbeiten";
 "lng_rights_edit_admin_header" = "Was kann dieser Admin machen?";
 "lng_rights_about_add_admins_yes" = "Dieser Admin wird neue Admins mit gleichen (oder eingeschränkten) Rechten hinzufügen können.";
 "lng_rights_about_add_admins_no" = "Dieser Admin kann keine neuen Admins hinzufügen.";
 "lng_rights_about_admin_cant_edit" = "Du kannst die Berechtigungen für diesen Admin nicht ändern.";
+"lng_rights_about_restriction_cant_edit" = "Die Einschränkungen für diesen Benutzer können Sie nicht ändern.";
+"lng_rights_restriction_for_all" = "Diese Option ist für alle Mitglieder in Gruppenberechtigungen deaktiviert. Du kannst entweder die Berechtigung für alle aktivieren oder diesen Benutzer zu einem Administrator machen.";
+"lng_rights_permission_for_all" = "Diese Option ist für alle Mitglieder in Gruppenberechtigungen aktiviert.";
+"lng_rights_permission_unavailable" = "Diese Berechtigung ist in öffentlichen Gruppen nicht verfügbar.";
+"lng_rights_permission_cant_edit" = "Sie können diese Berechtigung nicht bearbeiten.";
 "lng_rights_user_restrictions" = "Nutzerbeschränkungen";
 "lng_rights_user_restrictions_header" = "Was kann dieser Nutzer machen?";
+"lng_rights_default_restrictions_header" = "Was können die Mitglieder dieser Gruppe tun?";
 
 "lng_rights_channel_info" = "Kanal-Info ändern";
 "lng_rights_channel_post" = "Nachrichten senden";
@@ -1321,6 +1813,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_rights_chat_send_media" = "Medien senden";
 "lng_rights_chat_send_stickers" = "Sticker & GIFs senden";
 "lng_rights_chat_send_links" = "Linkvorschau senden";
+"lng_rights_chat_send_polls" = "Umfragen senden";
+"lng_rights_chat_add_members" = "Mitglieder hinzufügen";
 "lng_rights_chat_banned_until_header" = "Eingeschränkt bis";
 "lng_rights_chat_banned_forever" = "Dauerhaft";
 "lng_rights_chat_banned_day#one" = "Für {count} Tag";
@@ -1331,13 +1825,37 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_rights_chat_banned_custom_date" = "Bis {date}";
 "lng_rights_chat_banned_block" = "Sperren und aus Gruppe entfernen";
 
+"lng_rights_transfer_group" = "Übertragung des Gruppenbesitzes";
+"lng_rights_transfer_channel" = "Übertragung des Kanalbesitzes";
+"lng_rights_transfer_check" = "Sicherheitsüberprüfung";
+"lng_rights_transfer_check_about" = "Du kannst diese Gruppe nur dann auf {user} übertragen, wenn du das getan hast:";
+"lng_rights_transfer_check_password" = "• Aktiviert **2-Step Verification** mehr als **7 Tage zuvor.";
+"lng_rights_transfer_check_session" = "• Hat sich mehr als **24 Stunden** zuvor auf diesem Gerät angemeldet.";
+"lng_rights_transfer_check_later" = "Bitte kommen Sie später wieder.";
+"lng_rights_transfer_set_password" = "Passwort festlegen";
+"lng_rights_transfer_about" = "Dadurch werden die vollen **Besitzerrechte** für {group} auf {user} übertragen.";
+"lng_rights_transfer_sure" = "Besitzer wechseln";
+"lng_rights_transfer_password_title" = "Zweistufige Verifizierung";
+"lng_rights_transfer_password_description" = "Bitte geben Sie Ihr Passwort ein, um die Übertragung abzuschließen.";
+"lng_rights_transfer_done_group" = "{user} ist nun der Eigentümer der Gruppe.";
+"lng_rights_transfer_done_channel" = "{user} ist nun der Besitzer des Kanals.";
+
 "lng_restricted_send_message" = "Die Admins dieser Gruppe haben dir die Berechtigung entzogen, Nachrichten zu senden.";
 "lng_restricted_send_media" = "Die Admins dieser Gruppe haben dir die Berechtigung entzogen, Medien zu senden.";
 "lng_restricted_send_stickers" = "Die Admins dieser Gruppe haben dir die Berechtigung entzogen, Sticker zu senden.";
 "lng_restricted_send_gifs" = "Die Admins dieser Gruppe haben dir die Berechtigung entzogen, GIFs zu senden.";
 "lng_restricted_send_inline" = "Die Admins dieser Gruppe haben dir die Berechtigung entzogen, Inline-Bot Inhalte zu senden.";
+"lng_restricted_send_polls" = "Die Administratoren dieser Gruppe haben dich daran gehindert, Umfragen hier zu veröffentlichen.";
+"lng_restricted_send_message_all" = "Das Schreiben von Nachrichten ist in dieser Gruppe nicht erlaubt.";
+"lng_restricted_send_media_all" = "Das Posten von Medieninhalten ist in dieser Gruppe nicht erlaubt.";
+"lng_restricted_send_stickers_all" = "Das Posten von Stickern ist in dieser Gruppe nicht erlaubt.";
+"lng_restricted_send_gifs_all" = "Das Posten von GIFs ist in dieser Gruppe nicht erlaubt.";
+"lng_restricted_send_inline_all" = "Das Posten von Inline-Inhalten ist in dieser Gruppe nicht erlaubt.";
+"lng_restricted_send_polls_all" = "Das Veröffentlichen von Umfragen ist in dieser Gruppe nicht erlaubt.";
 
-"lng_restricted_list_title" = "Eingeschränke Nutzer";
+"lng_exceptions_list_title" = "Ausnahmen";
+"lng_removed_list_title" = "Entfernte Benutzer";
+"lng_restricted_list_title" = "Eingeschränkte Nutzer";
 "lng_banned_list_title" = "Gesperrte Nutzer";
 
 "lng_admin_log_title_all" = "Alle Aktionen";
@@ -1384,6 +1902,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_invites_disabled" = "{from} hat Gruppeneinladungen deaktiviert";
 "lng_admin_log_signatures_enabled" = "{from} hat Unterschriften aktiviert";
 "lng_admin_log_signatures_disabled" = "{from} hat Unterschriften deaktiviert";
+"lng_admin_log_history_made_hidden" = "{from} wurde für die Gruppenhistorie für neue Mitglieder versteckt.";
+"lng_admin_log_history_made_visible" = "{from} wurde für die Gruppenhistorie für neue Mitglieder sichtbar gemacht";
 "lng_admin_log_pinned_message" = "{from} hat Nachricht angeheftet:";
 "lng_admin_log_unpinned_message" = "{from} hat angeheftete Nachricht entfernt";
 "lng_admin_log_edited_caption" = "{from} hat Beschriftung bearbeitet:";
@@ -1396,13 +1916,22 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_participant_joined_channel" = "{from} ist dem Kanal beigetreten";
 "lng_admin_log_participant_left" = "{from} hat die Gruppe verlassen";
 "lng_admin_log_participant_left_channel" = "{from} hat den Kanal verlassen";
+"lng_admin_log_stopped_poll" = "{from} gestoppte Umfragen:";
 "lng_admin_log_invited" = "hat {user} eingeladen";
 "lng_admin_log_banned" = "hat {user} gesperrt";
 "lng_admin_log_restricted" = "hat Einschränkungen für {user} {until} geändert";
 "lng_admin_log_promoted" = "hat Berechtigungen für {user} geändert";
+"lng_admin_log_transferred" = "Übertragung des Eigentümerrechts an {user}";
+"lng_admin_log_changed_default_permissions" = "geänderte Standardberechtigungen";
 "lng_admin_log_changed_stickers_group" = "{from} hat das Sticker-Paket {sticker_set} der Gruppe geändert";
 "lng_admin_log_changed_stickers_set" = "Sticker-Paket";
 "lng_admin_log_removed_stickers_group" = "{from} hat das Sticker-Paket der Gruppe entfernt";
+"lng_admin_log_changed_linked_chat" = "{from} änderte die Diskussionsgruppe in «{chat}»";
+"lng_admin_log_removed_linked_chat" = "{from} hat die Diskussionsgruppe entfernt";
+"lng_admin_log_changed_linked_channel" = "{from} änderte den verknüpften Kanal auf «{chat}»";
+"lng_admin_log_removed_linked_channel" = "{from} hat den verknüpften Kanal entfernt";
+"lng_admin_log_changed_location_chat" = "{from} änderte die Position der Gruppe auf {address}.";
+"lng_admin_log_removed_location_chat" = "{from} hat den Gruppenort entfernt";
 "lng_admin_log_user_with_username" = "{name} ({mention})";
 "lng_admin_log_restricted_forever" = "unbegrenzt";
 "lng_admin_log_restricted_until" = "bis {date}";
@@ -1411,6 +1940,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_banned_send_media" = "Medien senden";
 "lng_admin_log_banned_send_stickers" = "Sticker & GIFs senden";
 "lng_admin_log_banned_embed_links" = "Linkvorschau senden";
+"lng_admin_log_banned_send_polls" = "Umfragen senden";
 "lng_admin_log_admin_change_info" = "Info ändern";
 "lng_admin_log_admin_post_messages" = "Nachrichten senden";
 "lng_admin_log_admin_edit_messages" = "Nachrichten bearbeiten";
@@ -1420,6 +1950,295 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_admin_log_admin_invite_link" = "Nutzer per Link einladen";
 "lng_admin_log_admin_pin_messages" = "Nachrichten anheften";
 "lng_admin_log_admin_add_admins" = "Neue Admins hinzufügen";
+
+// #feed
+//"lng_feed_name" = "Feed";
+//"lng_feed_show_next" = "Nächste anzeigen";
+
+//"lng_feed_group" = "Feed in Gruppen";
+//"lng_feed_ungroup" = "Gruppen von Feed trennen;
+//"lng_feed_channel_added" = "Kanal zu Ihrem Feed hinzugefügt.";
+//"lng_feed_channel_removed" = "Kanal aus Ihrem Feed entfernt.";
+//"lng_feed_no_messages" = "Noch keine Nachrichten in diesem Feed";
+//"lng_feed_channels#one" = "{count} Kanal";
+//"lng_feed_channels#other" = "{count} Kanäle";
+//"lng_feed_notifications" = "Feed Mitteilungen";
+//"lng_feed_ungroup_all" = "Alle Kanäle aufheben";
+//"lng_feed_sure_ungroup_all" = "Sind Sie sicher, dass Sie alle Kanäle aus diesem Feed gruppieren möchten?";
+//"lng_feed_ungroup_sure" = "Gruppierung auflösen";
+//"lng_feed_create_new" = "Neuen Feed";
+//"lng_feed_too_few_channels#one" = "Sie benötigen mindestens den Kanal {count}, um einen Feed zu erstellen.";
+//"lng_feed_too_few_channels#other" = "Sie benötigen mindestens {count} Kanäle, um einen Feed zu erstellen.";
+//"lng_feed_select_more_channels#one" = "Wählen Sie den Kanal {count} oder mehr.";
+//"lng_feed_select_more_channels#other" = "Wählen Sie {Anzahl} Kanäle oder mehr.";
+//"lng_feed_create" = "Erstellen";
+//"lng_feed_edit_title" = "Feed bearbeiten";
+//"lng_feed_channels_not_found" = "Keine Kanäle gefunden";
+
+//"lng_info_feed_title" = "Feed Info";
+//"lng_info_feed_is_default" = "Neue Kanäle gruppieren";
+//"lng_info_feed_channels" = "Kanäle";
+
+"lng_terms_signup" = "Indem du dich anmeldest, \nstimmst du dem {link} zu.";
+"lng_terms_signup_link" = "Nutzungsbedingungen";
+"lng_terms_header" = "Nutzungsbedingungen";
+"lng_terms_age#one" = "Ich bestätige, dass ich {count} oder älter bin.";
+"lng_terms_age#other" = "Ich bestätige, dass ich {count} oder älter bin.";
+"lng_terms_agree" = "Zustimmen & Fortfahren";
+"lng_terms_decline" = "Ablehnen";
+"lng_terms_signup_sorry" = "Es tut uns sehr leid, aber das bedeutet, dass Sie sich nicht für Telegram anmelden können. \n\nIm Gegensatz zu anderen verwenden wir Ihre Daten nicht für Werbezwecke oder andere kommerzielle Zwecke. Telegram speichert nur die Informationen, die es benötigt, um als funktionsfähiger Cloud-Service zu funktionieren. Sie können die Art und Weise, wie wir Ihre Daten verwenden, in den Einstellungen für Datenschutz und Sicherheit anpassen. \n\nAber wenn Sie mit den geringen Anforderungen von Telegram generell nicht einverstanden sind, wird es uns nicht möglich sein, diesen Service anzubieten.";
+"lng_terms_update_sorry" = "Es tut uns sehr leid, aber das bedeutet, dass wir uns hier trennen müssen. Im Gegensatz zu anderen verwenden wir Ihre Daten nicht für Werbezwecke oder andere kommerzielle Zwecke. Telegram speichert nur die Informationen, die es benötigt, um als funktionsfähiger Cloud-Service zu funktionieren. Sie können die Art und Weise, wie wir Ihre Daten verwenden, in den Einstellungen für Datenschutz und Sicherheit anpassen. \n\n Aber wenn Sie mit den geringen Anforderungen von Telegram generell nicht einverstanden sind, wird es uns nicht möglich sein, diesen Service anzubieten. Sie können Ihr Konto jetzt deaktivieren - oder sich noch ein wenig umsehen und es später deaktivieren, wenn Sie mit der Art und Weise, wie wir Ihre Daten verwenden, nicht zufrieden sind. Wie klingt das?";
+"lng_terms_decline_and_delete" = "Ablehnen & Löschen";
+"lng_terms_back" = "Zurück";
+"lng_terms_delete_warning" = "Achtung, dadurch wird Ihr Telegrammkonto zusammen mit allen Daten, die Sie in der Telegramm-Cloud speichern, unwiderruflich gelöscht.\n\nWir werden Ihnen ein Tool zum Herunterladen Ihrer Daten zur Verfügung stellen - Sie sollten also vielleicht etwas warten, bevor Sie sie löschen.";
+"lng_terms_delete_now" = "Jetzt löschen";
+"lng_terms_agree_to_proceed" = "Bitte stimmen Sie zu und fahren Sie mit {bot} fort.";
+
+"lng_date_input_day" = "Tag";
+"lng_date_input_month" = "Monat";
+"lng_date_input_year" = "Jahr";
+
+"lng_passport_title" = "Telegram passport";
+"lng_passport_request1" = "{bot} beantragt Zugang zu Ihren personenbezogenen Daten";
+"lng_passport_request2" = "Bestäätigen Sie um auf diese Dienste zuzugreifen";
+"lng_passport_create_password" = "Bitte erstellen Sie ein Passwort, mit dem \nIhre persönlichen Daten verschlüsselt werden.";
+"lng_passport_about_password" = "Dieses Kennwort wird auch benötigt, \nwenn Sie sich bei einem neuen Gerät anmelden.";
+"lng_passport_password_create" = "Erstelle ein Passwort";
+"lng_passport_email_validate" = "Bestätigen";
+"lng_passport_code_sent" = "Ein Bestätigungscode wurde gesendet an \n {email}";
+"lng_passport_stop_password_sure" = "Möchten Sie die Einrichtung Ihres Passworts wirklich abbrechen?";
+"lng_passport_password_placeholder" = "Ihr Passwort";
+"lng_passport_next" = "Weiter";
+"lng_passport_password_wrong" = "Das von Ihnen eingegebene Passwort ist ungültig.";
+"lng_passport_header" = "Angeforderte Informationen";
+"lng_passport_identity_title" = "Identifikationsdokument";
+"lng_passport_identity_description" = "Laden Sie einen Nachweis Ihrer Identität hoch.";
+"lng_passport_identity_passport" = "Reißepass";
+"lng_passport_identity_passport_upload" = "Laden Sie einen Scan Ihres Reisepasses hoch.";
+"lng_passport_identity_card" = "Identitätskarte";
+"lng_passport_identity_card_upload" = "Laden Sie einen Scan Ihres Identitätsausweises hoch.";
+"lng_passport_identity_license" = "Fahrerlaubnis";
+"lng_passport_identity_license_upload" = "Laden Sie einen Scan Ihrer Fahrerlaubnis hoch";
+"lng_passport_identity_internal" = "Interner Pass";
+"lng_passport_identity_internal_upload" = "Laden Sie einen Scan Ihres Internen Passes hoch";
+"lng_passport_identity_about" = "Das Dokument muss Ihr Foto, Vor- und Nachname, Geburtsdatum, Dokumentnummer, Ausstellungsland und Verfallsdatum enthalten.";
+"lng_passport_address_title" = "Wohnsitzadresse";
+"lng_passport_address_description" = "Laden Sie einen Nachweis Ihrer Wohnsitzadresse hoch.";
+"lng_passport_address_bill" = "Betriebskostenabrechnung";
+"lng_passport_address_bill_upload" = "Laden Sie einen Scan Ihrer Versorgungsrechnung hoch.";
+"lng_passport_address_statement" = "Bankauszug";
+"lng_passport_address_statement_upload" = "Laden Sie einen Scan Ihres Bankauszuges hoch";
+"lng_passport_address_agreement" = "Mietvertrag";
+"lng_passport_address_agreement_upload" = "Laden Sie einen Scan Ihres Mietvertrages hoch.";
+"lng_passport_address_registration" = "Registrierung des Reisepasses";
+"lng_passport_address_registration_upload" = "Laden Sie einen Scan Ihrer Passregistrierung hoch.";
+"lng_passport_address_temporary" = "vorübergehende Zulassung";
+"lng_passport_address_temporary_upload" = "Laden Sie einen Scan Ihrer vorübergehenden Zulassung hoch.";
+"lng_passport_address_about" = "Um Ihre Adresse zu bestätigen, laden Sie bitte einen Scan oder ein Foto des ausgewählten Dokuments (alle Seiten) hoch.";
+"lng_passport_or_title" = "{document} oder {second_document}";
+"lng_passport_document_type" = "Bitte wählen Sie den Typ Ihres Dokuments aus:";
+"lng_passport_upload_document" = "Dokument hochladen";
+"lng_passport_phone_title" = "Telefon Nummer";
+"lng_passport_phone_description" = "Geben Sie Ihre Telefonnummer ein";
+"lng_passport_email_title" = "Email";
+"lng_passport_email_description" = "Geben Sie Ihre E-Mail-Adresse ein";
+"lng_passport_identity_selfie" = "Nehmen Sie ein Selfie mit Ihrem Dokument auf.";
+"lng_passport_translation_needed" = "Laden Sie eine Übersetzung Ihres Dokuments hoch.";
+"lng_passport_accept_allow" = "Du akzeptierst die {policy} und erlaubst ihrem {bot}, dir Nachrichten zu schicken.";
+"lng_passport_allow" = "Du erlaubst {bot}, dir Nachrichten zu schicken.";
+"lng_passport_policy" = "{bot} Datenschutzerklärung";
+"lng_passport_authorize" = "Autorisieren";
+"lng_passport_form_error" = "Das Autorisierungsformular konnte nicht abgerufen werden.";
+"lng_passport_save_value" = "Speichern";
+"lng_passport_saving" = "speichern...";
+"lng_passport_uploading" = "Hochladen...";
+"lng_passport_scan_index" = "Scan {index}";
+"lng_passport_upload_scans" = "Scans hochladen";
+"lng_passport_upload_more" = "Zusätzliche Scans hochladen";
+"lng_passport_selfie_title" = "Selfie";
+"lng_passport_selfie_description" = "Lade ein Foto von dir selbst hoch, auf dem du dein Dokument hältst. Achten Sie darauf, dass die ID und Ihr Gesicht gut sichtbar sind.";
+"lng_passport_upload_selfie" = "Selfie hochladen";
+"lng_passport_reupload_selfie" = "Selfie erneut hochladen";
+"lng_passport_front_side_title" = "Vorderseite";
+"lng_passport_front_side_description" = "Laden Sie die Vorderseite Ihres Dokuments hoch.";
+"lng_passport_upload_front_side" = "Laden Sie einen Scan der Vorderseite hoch.";
+"lng_passport_reupload_front_side" = "Laden Sie einen Scan der Vorderseite erneut hoch.";
+"lng_passport_reverse_side_title" = "Rückseite";
+"lng_passport_reverse_side_description" = "Laden Sie die Rückseite Ihres Dokuments hoch.";
+"lng_passport_upload_reverse_side" = "Laden Sie einen Scan der Rückseite hoch.";
+"lng_passport_reupload_reverse_side" = "Laden Sie einen Scan der Rückseite erneut hoch.";
+"lng_passport_main_page_title" = "Hauptseite";
+"lng_passport_main_page_description" = "Laden Sie die Hauptseite Ihres Dokuments hoch.";
+"lng_passport_upload_main_page" = "Laden Sie einen Scan der Hauptseite hoch.";
+"lng_passport_reupload_main_page" = "Einen Scan der Hauptseite erneut hochladen";
+"lng_passport_personal_details" = "Persönliche Daten";
+"lng_passport_personal_details_enter" = "Geben Sie Ihre persönlichen Daten ein";
+"lng_passport_document_details" = "Dokumentendetails";
+"lng_passport_choose_image" = "Scanbild auswählen";
+"lng_passport_delete_scan_undo" = "Rückgängig";
+"lng_passport_scan_uploaded" = "Hochgeladen am {date}";
+"lng_passport_first_name" = "Vorname";
+"lng_passport_middle_name" = "Zweitname";
+"lng_passport_last_name" = "Nachname";
+"lng_passport_birth_date" = "Geburtsdatum";
+"lng_passport_gender" = "Geschlecht";
+"lng_passport_gender_male" = "Männlich";
+"lng_passport_gender_female" = "Weiblich";
+"lng_passport_country" = "Land";
+"lng_passport_residence_country" = "Wohnsitz";
+"lng_passport_country_choose" = "Land auswählen";
+"lng_passport_document_number" = "Dokumentnummer";
+"lng_passport_expiry_date" = "Ablaufdatum";
+"lng_passport_native_name_title" = "Name in der Dokumentsprache";
+"lng_passport_native_name_about" = "Ihr Name in der Sprache des Landes ({country}), das das Dokument ausgestellt hat.";
+"lng_passport_native_name_language" = "Dein Name in {language}";
+"lng_passport_native_name_language_about" = "Ihr Name in der Sprache des Landes, das das Dokument ausgestellt hat.";
+"lng_passport_address" = "Anschrift";
+"lng_passport_address_enter" = "Bitte geben Sie Ihre Adresse an";
+"lng_passport_street" = "Straße";
+"lng_passport_city" = "Stadt";
+"lng_passport_state" = "Bundesland";
+"lng_passport_postcode" = "Postleitzahl";
+"lng_passport_translation" = "Übersetzung";
+"lng_passport_use_existing" = "USE {existing}";
+"lng_passport_use_existing_phone" = "Verwenden Sie die gleiche Telefonnummer wie bei Telegram.";
+"lng_passport_new_phone" = "Oder geben Sie eine neue Telefonnummer ein";
+"lng_passport_new_phone_code" = "Hinweis: Sie erhalten einen Bestätigungscode auf der von Ihnen angegebenen Telefonnummer.";
+"lng_passport_use_existing_email" = "Verwenden Sie die gleiche E-Mail-Adresse wie beim Telegram.";
+"lng_passport_new_email" = "Oder geben Sie eine neue E-Mail ein";
+"lng_passport_new_email_code" = "Hinweis: Sie erhalten einen Bestätigungscode an die von Ihnen angegebene E-Mail-Adresse.";
+"lng_passport_confirm_phone" = "Wir haben eine SMS mit einem Bestätigungscode an dein Telefon {phone} geschickt.";
+"lng_passport_confirm_email" = "Wir haben einen Bestätigungscode an deine E-Mail-Adresse {email} geschickt.";
+"lng_passport_sure_cancel" = "Wenn Sie fortfahren, gehen Ihre Änderungen verloren.";
+"lng_passport_scans_limit_reached" = "Sorry, das sind zu viele Scans für ein Dokument.";
+"lng_passport_delete_document" = "Dokument löschen";
+"lng_passport_delete_document_sure" = "Sind Sie sicher, dass Sie dieses Dokument löschen möchten?";
+"lng_passport_delete_details" = "Persönliche Daten löschen";
+"lng_passport_delete_details_sure" = "Sind Sie sicher, dass Sie Ihre persönlichen Daten löschen möchten?";
+"lng_passport_delete_address" = "Löschen von Adressinformationen";
+"lng_passport_delete_address_sure" = "Sind Sie sicher, dass Sie Ihre Adressdaten löschen möchten?";
+"lng_passport_delete_email" = "E-Mail löschen";
+"lng_passport_delete_email_sure" = "Sind Sie sicher, dass Sie Ihre E-Mail-Adresse löschen möchten?";
+"lng_passport_delete_phone" = "Telefonnummer löschen";
+"lng_passport_delete_phone_sure" = "Sind Sie sicher, dass Sie Ihre Telefonnummer löschen möchten?";
+"lng_passport_success" = "Autorisierung erfolgreich!";
+"lng_passport_stop_sure" = "Sind Sie sicher, dass Sie diese Berechtigung stoppen wollen?";
+"lng_passport_stop" = "Stop";
+"lng_passport_restart_sure" = "Ein unerwarteter Fehler ist aufgetreten. Vielleicht wurden einige Änderungen an einer anderen Telegramanwendung vorgenommen. Möchten Sie diese Berechtigung neu starten?";
+"lng_passport_restart" = "Restart";
+"lng_passport_error_too_large" = "Entschuldigung, diese Datei ist zu groß.";
+"lng_passport_error_bad_size" = "Entschuldigung, dieses Bild hat falsche Abmessungen.";
+"lng_passport_error_cant_read" = "Diese Datei kann nicht gelesen werden. Bitte wählen Sie ein Bild aus.";
+"lng_passport_bad_name" = "Bitte verwenden Sie nur lateinische Zeichen.";
+"lng_passport_wait_upload" = "Bitte warten Sie, bis der Upload abgeschlossen ist.";
+"lng_passport_app_out_of_date" = "Ihre Telegram-App ist leider veraltet und kann diese Anfrage nicht bearbeiten. Bitte aktualisieren Sie Telegram.";
+
+"lng_export_title" = "Persönliche Daten exportieren";
+"lng_export_progress_title" = "Export personenbezogener Daten";
+"lng_export_option_info" = "Account information";
+"lng_export_option_info_about" = "Der von Ihnen gewählte Bildschirmname, Benutzername, Telefonnummer und Profilbilder.";
+"lng_export_option_contacts" = "Kontaktliste";
+"lng_export_option_contacts_about" = "Wenn Sie den Zugriff erlauben, werden die Kontakte kontinuierlich mit dem Telegram synchronisiert. Sie können dies unter Einstellungen > Datenschutz & Sicherheit auf mobilen Geräten einstellen.";
+"lng_export_option_sessions" = "Aktive Sitzungen";
+"lng_export_option_sessions_about" = "Wir speichern dies, um Ihre verbundenen Geräte unter Einstellungen > Datenschutz & Sicherheit > Aktive Sitzungen anzuzeigen.";
+"lng_export_header_other" = "Sonstiges";
+"lng_export_option_other" = "Sonstige Daten";
+"lng_export_option_other_about" = "Andere Arten von Daten, die nicht vorstehend erwähnt wurden (beta).";
+"lng_export_header_chats" = "Chat-Exporteinstellungen";
+"lng_export_option_personal_chats" = "Persönliche Chats";
+"lng_export_option_bot_chats" = "Bot Chats";
+"lng_export_option_private_groups" = "Private Gruppen";
+"lng_export_option_private_channels" = "Private Kanäle";
+"lng_export_option_public_groups" = "Öffentliche Gruppen";
+"lng_export_option_public_channels" = "Öffentliche Kanäle";
+"lng_export_option_only_my" = "Nur meine Nachrichten";
+"lng_export_header_media" = "Einstellungen für den Medienexport";
+"lng_export_option_photos" = "Fotos";
+"lng_export_option_video_files" = "Videodateien";
+"lng_export_option_voice_messages" = "Sprachnachrichten";
+"lng_export_option_video_messages" = "Runde Videonachrichten";
+"lng_export_option_stickers" = "Stickers";
+"lng_export_option_gifs" = "Animierte GIFs";
+"lng_export_option_files" = "Dateien";
+"lng_export_option_size_limit" = "Größenbegrenzung: {size}";
+"lng_export_header_format" = "Standort und Format";
+"lng_export_option_location" = "Downloadpfad: {path}";
+"lng_export_option_html" = "Menschlich lesbar HTML";
+"lng_export_option_json" = "Maschinell lesbar JSON";
+"lng_export_limits" = "From: {from}, zu: {till}";
+"lng_export_beginning" = "die älteste Nachricht";
+"lng_export_end" = "präsentieren";
+"lng_export_from_beginning" = "Reset";
+"lng_export_till_end" = "Reset";
+"lng_export_start" = "Export";
+"lng_export_state_initializing" = "Initialisierung......";
+"lng_export_state_userpics" = "Profilbilder";
+"lng_export_state_chats_list" = "Chats bearbeiten...";
+"lng_export_state_chats" = "Chats";
+"lng_export_state_ready_progress" = "{ready} / {total}";
+"lng_export_progress" = "Sie können dieses Fenster jetzt schließen. Bitte beenden Sie das Telegram erst, wenn der Datenexport abgeschlossen ist.";
+"lng_export_stop" = "Stop";
+"lng_export_sure_stop" = "Sind Sie sicher, dass Sie mit dem Export Ihrer Daten aufhören wollen? \n\nWenn Sie das tun, müssen Sie von vorne anfangen.";
+"lng_export_about_done" = "Ihre Daten wurden erfolgreich exportiert.";
+"lng_export_done" = "Meine Daten anzeigen";
+"lng_export_finished" = "Datenexport abgeschlossen.";
+"lng_export_total_amount" = "Gesamtanzahl der Dateien: {amount}.";
+"lng_export_total_size" = "Gesamtgröße: {size}.";
+"lng_export_folder" = "Exportordner auswählen";
+"lng_export_invalid" = "Entschuldigung, Sie haben einen neuen Datenexport gestartet, so dass dieser Datenexport nun abgebrochen wird.";
+"lng_export_delay" = "Aus Sicherheitsgründen können Sie leider in {hours} mit dem Herunterladen Ihrer Daten beginnen. Wir haben alle Ihre Geräte über die Exportanfrage informiert, um sicherzustellen, dass sie autorisiert ist und um Ihnen Zeit zu geben, zu reagieren, wenn sie es nicht ist.\n\nBitte kommen Sie am {date} zurück und wiederholen Sie die Anfrage mit demselben Gerät.";
+"lng_export_delay_less_than_hour" = "weniger als eine Stunde";
+"lng_export_delay_hours#one" = "{count} stunde";
+"lng_export_delay_hours#other" = "{count} stunden";
+"lng_export_suggest_title" = "Datenexport bereit";
+"lng_export_suggest_text" = "Sie können nun die von Ihnen angeforderten Daten herunterladen. Starten Sie den Datenexport?";
+"lng_export_suggest_cancel" = "Nicht jetzt";
+"lng_export_about_telegram" = "Hier sind alle Daten, die Sie angefordert haben. Denken Sie daran: Wir verwenden Ihre Daten nicht für Werbezwecke, wir verkaufen sie nicht an andere, und wir sind nicht Teil einer "Unternehmensfamilie". \n\n\Telegram speichert nur die Informationen, die es benötigt, um als funktionsfähiger Cloud-Service zu funktionieren - zum Beispiel Ihre Cloud-Chats, damit Sie von beliebigen Geräten aus auf sie zugreifen können, \n\nohne Backups von Drittanbietern zu verwenden, oder Ihre Kontakte, damit Sie sich beim Versenden von Nachrichten an Personen auf Telegram auf Ihre bestehende soziale Struktur verlassen können.";
+"lng_export_about_contacts" = "Wenn Sie den Zugriff erlauben, werden Ihre Kontakte kontinuierlich mit dem Telegramm synchronisiert. Dank dessen können Sie ganz einfach zu Telegramm wechseln, ohne Ihren bestehenden sozialen Graphen zu verlieren - und sich mit Freunden über alle Ihre Geräte hinweg verbinden. Wir verwenden Daten über Ihre Kontakte, um Sie darüber zu informieren, wann sie dem Telegramm beitreten. Wir verwenden es auch, um sicherzustellen, dass Sie die Namen, die Sie in Ihrem Telefonbuch haben, anstelle der Bildschirmnamen sehen, die die Leute für sich selbst wählen.\n\n\Sie können die Synchronisierung von Kontakten deaktivieren oder Ihre gespeicherten Kontakte unter Einstellungen > Datenschutz und Sicherheit in den mobilen Anwendungen von Telegram löschen.";
+"lng_export_about_frequent" = "Diese Bewertung zeigt an, welche Personen am ehesten häufig eine Nachricht von Ihnen erhalten. Telegram verwendet diese Daten, um das Feld "Personen" oben im Suchbereich zu füllen. Diese Bewertung wird auch für Inline-Bots berechnet, so dass die App die Bots vorschlagen kann, die Sie am ehesten im Anhang-Menü verwenden werden (oder wenn Sie eine neue Nachricht mit \"@\" starten). \n\nUm diese Daten zu löschen, gehen Sie zu Einstellungen > Datenschutz & Sicherheit und deaktivieren Sie'Häufige Kontakte vorschlagen' (erfordert Telegramm für iOS v.4.8.3 oder Telegramm für Android v.4.8.10 oder höher).";
+"lng_export_about_sessions" = "Wir speichern Sitzungsinformationen, um Ihre verbundenen Geräte unter Einstellungen > Datenschutz & Sicherheit > Aktive Sitzungen anzuzeigen.";
+"lng_export_about_web_sessions" = "Wir speichern dies, um die Websites anzuzeigen, auf denen Sie sich mit Authentifizierung per Telegramm angemeldet haben. Diese Informationen werden unter Einstellungen > Datenschutz & Sicherheit > Aktive Sitzungen angezeigt.";
+"lng_export_about_chats" = "Diese Seite listet alle Chats aus diesem Export auf und wo man nach ihren Daten suchen kann.";
+"lng_export_about_left_chats" = "Unten sind die Supergruppen und Kanäle aus diesem Export, die du verlassen hast oder wo du gesperrt wurdest.\n\n Beachte, dass du, wenn du einen Kanal oder eine Supergruppe verlässt, die du erstellt hast, die Möglichkeit hast, ihn entweder zu löschen oder einfach zu verlassen (falls du später wieder Mitglied werden möchtest, oder die Community am Leben zu erhalten, obwohl du kein Mitglied bist).";
+
+"lng_language_switch_title" = "Sprache ändern?";
+"lng_language_switch_about_official" = "Sie sind dabei, ein Sprachpaket {lang_name} anzuwenden, das zu {percent}% vollständig ist. \n\nDies wird die gesamte Oberfläche übersetzen. Du kannst Korrekturen im {link} vorschlagen. Du kannst deine Sprache jederzeit unter Einstellungen zurücksetzen.";
+"lng_language_switch_about_unofficial" = "Sie sind dabei, ein benutzerdefiniertes Sprachpaket {lang_name} anzuwenden, das zu {percent}% vollständig ist. \n\n Dieses wird die gesamte Benutzeroberfläche übersetzen. Du kannst Korrekturen im {link} vorschlagen. Du kannst deine Sprache jederzeit unter Einstellungen zurücksetzen.";
+"lng_language_switch_link" = "Übersetzungspanel";
+"lng_language_switch_apply" = "Ändern";
+"lng_language_not_found" = "Dieses Sprachpaket existiert leider nicht.";
+"lng_language_already" = "Sie verwenden dieses Sprachpaket bereits. Du kannst deine Sprache wieder in den Einstellungen ändern.";
+"lng_language_not_ready_title" = "Unzureichende Daten";
+"lng_language_not_ready_about" = "Leider enthält dieses benutzerdefinierte Sprachpaket ({lang_name}) keine Daten für Telegram Desktop. Du kannst zu diesem Sprachpaket mit dem {link} beitragen.";
+"lng_language_not_ready_link" = "Übersetzungsplattform";
+
+"lng_launch_exe_warning" = "Diese Datei hat die Erweiterung {extension}. \nSind Sie sicher, dass Sie sie ausführen wollen?";
+"lng_launch_exe_sure" = "Ausführen";
+"lng_launch_exe_dont_ask" = "Frag mich nicht noch einmal.";
+
+"lng_polls_anonymous" = "Anonyme Umfrage";
+"lng_polls_closed" = "Endergebnisse";
+"lng_polls_votes_count#one" = "{count} Abstimmung";
+"lng_polls_votes_count#other" = "{count} Abstimmungen";
+"lng_polls_votes_none" = "Keine Abstimmung";
+"lng_polls_retract" = "Abstimmung zurückziehen";
+"lng_polls_stop" = "Umfrage stoppen";
+"lng_polls_stop_warning" = "Wenn du diese Umfrage jetzt abbrichst, kann niemand mehr daran teilnehmen. Diese Aktion kann nicht rückgängig gemacht werden.";
+"lng_polls_stop_sure" = "Stop";
+"lng_polls_create" = "Umfrage erstellen";
+"lng_polls_create_title" = "Neue Umfrage";
+"lng_polls_create_question" = "Frage";
+"lng_polls_create_question_placeholder" = "Eine Frage stellen";
+"lng_polls_create_options" = "Umfrageoptionen";
+"lng_polls_create_option_add" = "Eine Option hinzufügen...";
+"lng_polls_create_limit#one" = "Sie können {count} weitere Option hinzufügen.";
+"lng_polls_create_limit#other" = "Du kannst {count} weitere Optionen hinzufügen.";
+"lng_polls_create_maximum" = "Sie haben die maximale Anzahl von Optionen hinzugefügt.";
+"lng_polls_create_button" = "Erstellt";
+
+"lng_outdated_title" = "BITTE AKTUALISIEREN SIE IHR BETRIEBSSYSTEM.";
+"lng_outdated_soon" = "Andernfalls stoppt der Telegram Desktop die Aktualisierung am {date}.";
+"lng_outdated_now" = "So dass Telegram-Desktop auf neuere Versionen aktualisieren.";
 
 // Not used
 
@@ -1441,6 +2260,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_linux_menu_undo" = "Rückgängig";
 "lng_linux_menu_redo" = "Wiederholen";
+
+"lng_linux_no_audio_prefs" = "Sie haben keine Audio-Konfigurationsanwendungen installiert.";
 
 // Mac specific
 
@@ -1478,5 +2299,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_mac_menu_new_group" = "Neue Gruppe";
 "lng_mac_menu_new_channel" = "Neuer Kanal";
 "lng_mac_menu_show" = "Telegram anzeigen";
+
+"lng_mac_touchbar_favorite_stickers" = "Beliebteste Stickers";
 
 // Keys finished
